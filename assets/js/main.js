@@ -116,7 +116,7 @@
   });
 
   window.addEventListener('resize', function () {
-    if (window.innerWidth > 1080) closeMenu();
+    if (window.innerWidth > 1100) closeMenu();
   });
 
   /* ------------------------------------------------------ scroll reveal -- */
