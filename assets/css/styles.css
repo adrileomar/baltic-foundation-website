@@ -330,11 +330,12 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 }
 
 /* --- Home hero: single full-bleed collage image ----------------------------- */
-/* Locked to the same 21:9 ratio the hero image is designed at, so the photo
-   fills the section exactly with no crop and no empty margin on any screen
-   wide enough to clear the min-height floor below. On narrower/shorter
-   viewports min-height wins instead, giving the copy room to breathe. */
-.hero--home { aspect-ratio: 21 / 9; min-height: min(70vh, 660px); display: flex; align-items: flex-end; padding-bottom: clamp(8px, 1.2vh, 16px); }
+/* Fills the screen below the sticky header, so the whole first view is the
+   hero and nothing from the next section peeks in. The photo (background-size:
+   contain, anchored top) keeps its own 21:9-ish proportions and doesn't
+   stretch to match — the extra room below it is the hero's own navy gradient,
+   which is exactly where the copy sits now. */
+.hero--home { min-height: calc(100vh - 64px); display: flex; align-items: flex-end; padding-bottom: clamp(48px, 7vh, 96px); }
 
 .hero__collage {
   position: absolute; inset: 0; z-index: 0;
@@ -709,12 +710,12 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 
 @media (max-width: 900px) {
   html { scroll-padding-top: 72px; }
-  /* Below 900px: the 21:9 lock would make the section far too short once
-     the headline wraps to more lines, so let height follow content again;
-     drop the (currently inert) watch button and the badges (six capsules
-     do not fit a phone-width image without overlapping) so the copy has
-     the width and room it needs. */
-  .hero--home { aspect-ratio: auto; min-height: 0; }
+  /* Below 900px: forcing full-viewport height would either clip the
+     stacked photo+copy layout or leave dead space, so let height follow
+     content instead; drop the (currently inert) watch button and the
+     badges (six capsules do not fit a phone-width image without
+     overlapping) so the copy has the width and room it needs. */
+  .hero--home { min-height: 0; padding-bottom: clamp(24px, 4vh, 40px); }
   .hero__badges { display: none; }
   .btn--watch { display: none; }
   .hero__copy { max-width: none; }
