@@ -16,7 +16,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Caveat:wght@600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="assets/css/styles.css">
 
 <!-- Marks that JS is running, so scroll-reveal may hide elements before revealing them. -->
@@ -80,29 +80,10 @@
 
 <!-- ========================= HERO ========================= -->
 <section class="hero hero--home">
-  <div class="hero__collage" aria-hidden="true">
-    <span class="hero__panel" style="background-image:url('assets/img/hero/teacher.webp')"></span>
-    <span class="hero__panel" style="background-image:url('assets/img/hero/hands.webp')"></span>
-    <span class="hero__panel" style="background-image:url('assets/img/hero/youth.webp')"></span>
-    <span class="hero__panel" style="background-image:url('assets/img/hero/opportunities.webp')"></span>
-    <span class="hero__panel" style="background-image:url('assets/img/hero/erasmus.webp')"></span>
-  </div>
+  <!-- Single full-bleed collage image (already includes its own captions
+       and panel composition) rather than separately clipped photo panels. -->
+  <div class="hero__collage" style="background-image:url('assets/img/hero/collage.webp')" aria-hidden="true"></div>
   <div class="hero__scrim" aria-hidden="true"></div>
-
-  <!-- One badge per collage photo, naming what it shows. -->
-  <div class="hero__badges" aria-hidden="true">
-    <span class="hero__badge" style="left:10%" data-i18n="hero.badge1">Teachers</span>
-    <span class="hero__badge" style="left:30%" data-i18n="hero.badge2">Schools</span>
-    <span class="hero__badge" style="left:50%" data-i18n="hero.badge3">Youth</span>
-    <span class="hero__badge" style="left:70%" data-i18n="hero.badge4">Opportunities</span>
-    <span class="hero__badge" style="left:90%" data-i18n="hero.badge5">Erasmus+</span>
-  </div>
-
-  <!-- The youth (3rd) panel already carries its own "Ideas today. Change
-       tomorrow." caption baked into the source photo, so there is no
-       separate translatable note over it — see the commit message for why. -->
-  <span class="hero__note hero__note--1" data-i18n="hero.note1" aria-hidden="true">Better teachers, brighter futures.</span>
-  <span class="hero__note hero__note--2" data-i18n="hero.note2" aria-hidden="true">A more open Europe for every young person.</span>
 
   <div class="container hero__grid">
     <div class="hero__copy">

@@ -51,13 +51,6 @@ const CONTENT = {
     "hero.cta1": 'Sazināties',
     "hero.cta2": 'Darbības virzieni',
     "hero.watch": 'Skatīties mūsu stāstu',
-    "hero.badge1": 'Pedagogi',
-    "hero.badge2": 'Skolas',
-    "hero.badge3": 'Jaunieši',
-    "hero.badge4": 'Iespējas',
-    "hero.badge5": 'Erasmus+',
-    "hero.note1": 'Labāki skolotāji — spilgtāka nākotne.',
-    "hero.note2": 'Atvērtāka Eiropa katram jaunietim.',
 
     /* --- Trīs balsti ------------------------------------------------------ */
     "pillar.1.title": 'Eiropas pieredze',
@@ -372,13 +365,6 @@ const CONTENT = {
     "hero.cta1": 'Get in touch',
     "hero.cta2": 'What we do',
     "hero.watch": 'Watch our story',
-    "hero.badge1": 'Teachers',
-    "hero.badge2": 'Schools',
-    "hero.badge3": 'Youth',
-    "hero.badge4": 'Opportunities',
-    "hero.badge5": 'Erasmus+',
-    "hero.note1": 'Better teachers, brighter futures.',
-    "hero.note2": 'A more open Europe for every young person.',
 
     "pillar.1.title": 'European experience',
     "pillar.1.text": 'Erasmus+, Jean Monnet and a partner network across Europe.',

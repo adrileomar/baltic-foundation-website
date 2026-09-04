@@ -265,19 +265,15 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 
 .hero__cta { display: flex; flex-wrap: wrap; gap: 14px; }
 
-/* --- Home hero: full-bleed angled photo collage ---------------------------- */
+/* --- Home hero: single full-bleed collage image ----------------------------- */
 .hero--home { min-height: min(88vh, 780px); display: flex; align-items: flex-end; padding-bottom: clamp(56px, 8vh, 92px); }
 
-.hero__collage { position: absolute; inset: 0; z-index: 0; display: flex; }
-.hero__panel {
-  flex: 1 1 0; min-width: 0; margin-left: -26px;
-  background-size: cover; background-position: center;
-  clip-path: polygon(26px 0, 100% 0, calc(100% - 26px) 100%, 0 100%);
+.hero__collage {
+  position: absolute; inset: 0; z-index: 0;
+  background-size: cover; background-position: 30% center; background-repeat: no-repeat;
 }
-.hero__panel:first-child { margin-left: 0; clip-path: polygon(0 0, 100% 0, calc(100% - 26px) 100%, 0 100%); }
-.hero__panel:last-child { clip-path: polygon(26px 0, 100% 0, 100% 100%, 0 100%); }
 
-/* Transparent at the top so the photos read clearly, deepening to a near-solid
+/* Transparent at the top so the photo reads clearly, deepening to a near-solid
    navy by the bottom so the copy sitting there stays legible. */
 .hero__scrim {
   position: absolute; inset: 0; z-index: 1;
@@ -288,29 +284,6 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
     rgba(16,26,46,.86) 80%,
     rgba(16,26,46,.96) 100%);
 }
-
-/* One small label per collage photo, centred over its panel. */
-.hero__badges { position: absolute; z-index: 2; top: 22px; left: 0; right: 0; height: 0; }
-.hero__badge {
-  position: absolute; top: 0; transform: translateX(-50%); white-space: nowrap;
-  font-size: .72rem; font-weight: 650; letter-spacing: .04em; color: #fff;
-  background: rgba(255, 255, 255, .16); border: 1px solid rgba(255, 255, 255, .4);
-  border-radius: 999px; padding: 6px 14px; backdrop-filter: blur(3px);
-}
-
-/* Handwritten-style asides over the bright upper part of the collage. */
-.hero__note {
-  position: absolute; z-index: 2; max-width: 15ch;
-  font-family: "Caveat", cursive; font-size: clamp(1.2rem, 2vw, 1.5rem); color: #fff;
-  line-height: 1.2; text-shadow: 0 2px 10px rgba(0,0,0,.4);
-}
-.hero__note::after {
-  content: ""; display: block; width: 46px; height: 3px; margin-top: 6px;
-  background: var(--amber); border-radius: 2px;
-}
-.hero__note--1 { left: 3%; top: 15%; transform: rotate(-3deg); }
-.hero__note--2 { right: 3%; top: 12%; text-align: right; transform: rotate(2deg); }
-.hero__note--2::after { margin-left: auto; }
 
 /* --- Pillars strip --------------------------------------------------------- */
 .pillars {
@@ -642,13 +615,11 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 
 @media (max-width: 900px) {
   html { scroll-padding-top: 72px; }
-  /* Six angled slivers only read as a collage with room to breathe; below
-     900px, fall back to one full-bleed photo and drop the floating badges,
-     handwritten notes and the (currently inert) watch button so the copy
-     has the width it needs. */
-  .hero__panel { display: none; }
-  .hero__panel:nth-child(2) { display: block; clip-path: none; margin-left: 0; width: 100%; flex: 1 1 100%; }
-  .hero__badges, .hero__note, .btn--watch { display: none; }
+  /* Below 900px, bias the crop further left (toward the note/teacher side,
+     roughly where the copy sits) and drop the (currently inert) watch
+     button so the copy has the width it needs. */
+  .hero__collage { background-position: 12% center; }
+  .btn--watch { display: none; }
   .hero__copy { max-width: none; }
   .hero--home { min-height: 0; }
   .mission__grid, .detail__grid, .about__grid, .partner__grid { grid-template-columns: 1fr; }
@@ -694,7 +665,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 }
 
 @media print {
-  .header, .mobile-nav, .hero__collage, .hero__scrim, .hero__badges, .hero__note, .btn--watch, .form, .social { display: none !important; }
+  .header, .mobile-nav, .hero__collage, .hero__scrim, .btn--watch, .form, .social { display: none !important; }
   .hero, .partner, .cta-band, .footer { background: #fff !important; color: #000 !important; }
   .hero h1, .hero__lead, .hero__accent, .partner h2, .cta-band h2 { color: #000 !important; }
 }
