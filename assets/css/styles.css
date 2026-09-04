@@ -135,15 +135,6 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 .btn--sm { padding: 10px 20px; font-size: .9rem; }
 .btn svg { width: 16px; height: 16px; flex: none; }
 
-/* Decorative "watch a video" pill — no video exists yet, so this is a plain
-   span (not a link/button) that looks inert on purpose: no hover lift. */
-.btn--watch {
-  border-color: rgba(255, 255, 255, .35); color: rgba(255, 255, 255, .85); background: rgba(255, 255, 255, .06);
-  cursor: default;
-}
-.btn--watch:hover { transform: none; }
-.btn--watch svg { width: 13px; height: 13px; }
-
 /* --- Header ---------------------------------------------------------------- */
 .header {
   position: sticky; top: 0; z-index: 100;
@@ -256,7 +247,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 .hero__accent { color: var(--amber); }
 .hero__lead {
   color: rgba(255, 255, 255, .9); font-size: clamp(1.125rem, 1.35vw, 1.25rem);
-  line-height: 1.5; max-width: 600px; margin-top: 20px; margin-bottom: 30px;
+  line-height: 1.5; max-width: 570px; margin-top: 20px; margin-bottom: 37px;
   text-shadow: 0 1px 12px rgba(0,0,0,.3);
 }
 
@@ -336,7 +327,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
    contain, anchored top) keeps its own 21:9-ish proportions and doesn't
    stretch to match — the extra room below it is the hero's own navy gradient,
    which is exactly where the copy sits now. */
-.hero--home { min-height: calc(100vh - 64px); display: flex; align-items: flex-end; padding-bottom: clamp(68px, 8.5vh, 116px); }
+.hero--home { min-height: calc(100vh - 64px); display: flex; align-items: flex-end; padding-bottom: clamp(86px, 10vh, 134px); }
 
 .hero__collage {
   position: absolute; inset: 0; z-index: 0;
@@ -701,10 +692,8 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
   html { scroll-padding-top: 72px; }
   /* Below 900px: forcing full-viewport height would either clip the
      stacked photo+copy layout or leave dead space, so let height follow
-     content instead; drop the (currently inert) watch button so the
-     copy has the width and room it needs. */
+     content instead. */
   .hero--home { min-height: 0; padding-bottom: clamp(24px, 4vh, 40px); }
-  .btn--watch { display: none; }
   .hero__copy { max-width: none; }
   .hero__grid { flex-direction: column; align-items: stretch; gap: 26px; }
   .hero__stats { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 0; padding-left: 0; transform: none; }
@@ -762,7 +751,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 }
 
 @media print {
-  .header, .mobile-nav, .hero__collage, .hero__scrim, .btn--watch, .form, .social { display: none !important; }
+  .header, .mobile-nav, .hero__collage, .hero__scrim, .form, .social { display: none !important; }
   .hero, .partner, .cta-band, .footer { background: #fff !important; color: #000 !important; }
   .hero h1, .hero__lead, .hero__accent, .partner h2, .cta-band h2 { color: #000 !important; }
 }

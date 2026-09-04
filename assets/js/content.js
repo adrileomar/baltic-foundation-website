@@ -50,7 +50,6 @@ const CONTENT = {
     "hero.stat4.label": 'Eiropas partneri',
     "hero.cta1": 'Sazināties',
     "hero.cta2": 'Uzzināt, ko darām',
-    "hero.watch": 'Skatīties mūsu stāstu',
 
     /* --- Trīs balsti ------------------------------------------------------ */
     "what.eyebrow": 'Ko mēs darām',
@@ -371,7 +370,6 @@ const CONTENT = {
     "hero.stat4.label": 'European partners',
     "hero.cta1": 'Get in touch',
     "hero.cta2": 'Discover what we do',
-    "hero.watch": 'Watch our story',
 
     "what.eyebrow": 'What we do',
     "what.title": 'Turning ideas<br>into real opportunities.',
