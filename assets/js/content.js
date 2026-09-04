@@ -48,6 +48,10 @@ const CONTENT = {
     "hero.lead2": 'Mēs savienojam Latvijas skolas, pedagogus un jauniešus ar Eiropas iespējām, starptautisku pieredzi un jaunām pieejām izglītībā. No Erasmus+ un pedagogu profesionālās pilnveides līdz jauniešu programmām, pētniecībai un AI — mēs pārvēršam idejas praktiskos projektos, kas reāli maina izglītību.',
     "hero.cta1": 'Uzsākt sadarbību',
     "hero.cta2": 'Darbības virzieni',
+    "hero.note1": 'Idejas · Diskusija · Ietekme',
+    "hero.note2": 'Nākotnes prasmes spilgtākai Eiropai',
+    "hero.watch": 'Skatīties mūsu stāstu',
+    "hero.scroll": 'Ritiniet tālāk',
 
     /* --- Trīs balsti ------------------------------------------------------ */
     "pillar.1.title": 'Eiropas pieredze',
@@ -359,6 +363,10 @@ const CONTENT = {
     "hero.lead2": 'We connect schools, teachers and young people in Latvia with European opportunities, international experience and new approaches to education. From Erasmus+ and teacher development to youth programmes, research and AI — we turn ideas into practical projects that make a real difference in education.',
     "hero.cta1": 'Start a conversation',
     "hero.cta2": 'What we do',
+    "hero.note1": 'Ideas · Discussion · Impact',
+    "hero.note2": 'Future skills for a brighter Europe',
+    "hero.watch": 'Watch our story',
+    "hero.scroll": 'Scroll to explore',
 
     "pillar.1.title": 'European experience',
     "pillar.1.text": 'Erasmus+, Jean Monnet and a partner network across Europe.',

@@ -234,11 +234,8 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
   mask-image: radial-gradient(ellipse 90% 70% at 50% 40%, #000 30%, transparent 100%);
   -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 40%, #000 30%, transparent 100%);
 }
-.hero__grid {
-  position: relative; z-index: 1;
-  display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
-  gap: clamp(40px, 6vw, 72px); align-items: center;
-}
+.hero__grid { position: relative; z-index: 2; }
+.hero__copy { max-width: 640px; }
 .hero .eyebrow { color: var(--amber-soft); }
 .hero .eyebrow::before { background: var(--amber); }
 .hero h1 { color: #fff; margin-bottom: 18px; }
@@ -246,27 +243,57 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
   font-size: clamp(1.02rem, 1.7vw, 1.26rem); font-weight: 650; color: var(--amber);
   text-transform: uppercase; letter-spacing: .03em; margin: 0 0 22px;
 }
-.hero__lead { color: rgba(255, 255, 255, .84); font-size: clamp(1.02rem, 1.5vw, 1.13rem); max-width: 56ch; margin-bottom: 34px; }
+.hero__lead { color: rgba(255, 255, 255, .88); font-size: clamp(1.02rem, 1.5vw, 1.13rem); max-width: 56ch; margin-bottom: 34px; text-shadow: 0 1px 12px rgba(0,0,0,.25); }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 14px; }
 
-/* Abstract composition instead of stock photography */
-.hero__art { position: relative; aspect-ratio: 1 / 1; max-width: 420px; margin-inline: auto; width: 100%; }
-.hero__art i { position: absolute; display: block; border-radius: 50%; }
-.hero__art .ring-1 { inset: 0; border: 1.5px solid rgba(255,255,255,.16); }
-.hero__art .ring-2 { inset: 13%; border: 1.5px solid rgba(255,255,255,.12); }
-.hero__art .ring-3 { inset: 26%; border: 1.5px solid rgba(232,163,61,.34); }
-.hero__art .arc {
-  inset: 0; border: 3px solid transparent; border-top-color: var(--amber); border-right-color: var(--amber);
-  animation: spin 26s linear infinite;
+/* --- Home hero: full-bleed angled photo collage ---------------------------- */
+.hero--home { min-height: min(88vh, 780px); display: flex; align-items: center; }
+
+.hero__collage { position: absolute; inset: 0; z-index: 0; display: flex; }
+.hero__panel {
+  flex: 1 1 0; min-width: 0; margin-left: -26px;
+  background-size: cover; background-position: center;
+  clip-path: polygon(26px 0, 100% 0, calc(100% - 26px) 100%, 0 100%);
 }
-.hero__art .core {
-  inset: 39%; background: linear-gradient(145deg, rgba(232,163,61,.95), rgba(232,163,61,.55));
-  box-shadow: 0 0 60px rgba(232,163,61,.4);
+.hero__panel:first-child { margin-left: 0; clip-path: polygon(0 0, 100% 0, calc(100% - 26px) 100%, 0 100%); }
+.hero__panel:last-child { clip-path: polygon(26px 0, 100% 0, 100% 100%, 0 100%); }
+
+.hero__scrim {
+  position: absolute; inset: 0; z-index: 1;
+  background:
+    linear-gradient(100deg, rgba(16,26,46,.96) 0%, rgba(16,26,46,.88) 30%, rgba(16,26,46,.56) 54%, rgba(16,26,46,.26) 78%, rgba(16,26,46,.4) 100%),
+    linear-gradient(0deg, rgba(16,26,46,.55), transparent 42%);
 }
-.hero__art .dot { width: 13px; height: 13px; background: #fff; opacity: .85; }
-.hero__art .dot-1 { top: -6px; left: 50%; margin-left: -6px; }
-.hero__art .dot-2 { bottom: 12%; right: 4%; background: var(--amber); }
-.hero__art .dot-3 { top: 30%; left: -6px; width: 9px; height: 9px; }
+
+.hero__note {
+  position: absolute; z-index: 2; max-width: 15ch;
+  font-family: "Caveat", cursive; font-size: clamp(1.25rem, 2.1vw, 1.6rem); color: #fff;
+  line-height: 1.2; text-shadow: 0 2px 10px rgba(0,0,0,.35); pointer-events: none;
+}
+.hero__note--1 { right: 7%; top: 15%; transform: rotate(-3deg); }
+.hero__note--2 { right: 4%; bottom: 24%; text-align: right; transform: rotate(2deg); }
+
+.hero__watch {
+  position: absolute; z-index: 2; right: 10%; top: 47%;
+  display: flex; align-items: center; gap: 14px; color: #fff;
+}
+.hero__watch-btn {
+  width: 54px; height: 54px; border-radius: 50%; flex: none;
+  border: 1.5px solid rgba(255,255,255,.7); display: grid; place-items: center;
+}
+.hero__watch-btn svg { width: 17px; height: 17px; margin-left: 3px; }
+.hero__watch-label { font-size: .92rem; font-weight: 600; text-shadow: 0 1px 8px rgba(0,0,0,.3); }
+
+.hero__scroll {
+  position: absolute; z-index: 2; right: 6%; bottom: 7%;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  color: rgba(255,255,255,.78); font-size: .78rem; font-weight: 600; letter-spacing: .04em;
+  text-decoration: none; transition: color .2s var(--ease);
+}
+.hero__scroll:hover { color: #fff; }
+.hero__scroll svg { width: 16px; height: 16px; animation: bob 1.8s ease-in-out infinite; }
+
+@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(5px); } }
 
 /* --- Pillars strip --------------------------------------------------------- */
 .pillars {
@@ -277,9 +304,14 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
   background: var(--line); border: 1px solid var(--line);
   border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);
 }
-.pillar { background: #fff; padding: 26px 28px; }
-.pillar h3 { font-size: 1.02rem; margin-bottom: 6px; display: flex; align-items: center; gap: 9px; }
-.pillar h3::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--amber); flex: none; }
+.pillar { background: #fff; padding: 24px 26px; display: flex; align-items: flex-start; gap: 16px; }
+.pillar__icon {
+  width: 44px; height: 44px; border-radius: 12px; flex: none; display: grid; place-items: center;
+  background: linear-gradient(145deg, #EEF2F8, #E4EAF3); color: var(--navy-700);
+}
+.pillar__icon svg { width: 22px; height: 22px; }
+.pillar__body { min-width: 0; }
+.pillar h3 { font-size: 1.02rem; margin-bottom: 6px; }
 .pillar p { font-size: .93rem; color: var(--muted); }
 
 /* --- Mission --------------------------------------------------------------- */
@@ -593,8 +625,15 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 
 @media (max-width: 900px) {
   html { scroll-padding-top: 84px; }
-  .hero__grid { grid-template-columns: 1fr; }
-  .hero__art { max-width: 300px; order: -1; margin-bottom: 8px; }
+  /* Six angled slivers only read as a collage with room to breathe; below
+     900px, fall back to one full-bleed photo and drop the floating notes,
+     the (currently inert) watch button and the scroll cue so the copy has
+     the width it needs. */
+  .hero__panel { display: none; }
+  .hero__panel:nth-child(2) { display: block; clip-path: none; margin-left: 0; width: 100%; flex: 1 1 100%; }
+  .hero__note, .hero__watch, .hero__scroll { display: none; }
+  .hero__copy { max-width: none; }
+  .hero--home { min-height: 0; }
   .mission__grid, .detail__grid, .about__grid, .partner__grid { grid-template-columns: 1fr; }
   .detail__head { max-width: 640px; }
   .detail__media { aspect-ratio: 16 / 9; max-height: 240px; }
@@ -638,7 +677,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 }
 
 @media print {
-  .header, .mobile-nav, .hero__art, .form, .social { display: none !important; }
+  .header, .mobile-nav, .hero__collage, .hero__scrim, .hero__note, .hero__watch, .hero__scroll, .form, .social { display: none !important; }
   .hero, .partner, .cta-band, .footer { background: #fff !important; color: #000 !important; }
-  .hero h1, .partner h2, .cta-band h2 { color: #000 !important; }
+  .hero h1, .hero__lead, .partner h2, .cta-band h2 { color: #000 !important; }
 }
