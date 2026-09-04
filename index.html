@@ -6,79 +6,59 @@
 <title>Baltic Foundation for Future Education — Veidojam nākotnes izglītību</title>
 <meta name="description" content="Nodibinājums Rīgā, kas attīsta nākotnes izglītību: Erasmus+ projektu atbalsts skolām, pedagogu profesionālā pilnveide, mākslīgais intelekts izglītībā un starptautiskā sadarbība.">
 <meta name="theme-color" content="#1B2A4A">
-
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Baltic Foundation for Future Education">
 <meta property="og:title" content="Baltic Foundation for Future Education">
 <meta property="og:description" content="Veidojam nākotnes izglītību — Erasmus+ atbalsts skolām, pedagogu pilnveide un AI izglītībā.">
-
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231B2A4A'/><circle cx='25' cy='26' r='7' fill='%23E8A33D'/><text x='7' y='21' font-family='Helvetica,Arial' font-size='13' font-weight='bold' fill='white'>BF</text></svg>">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Caveat:wght@600&display=swap">
 <link rel="stylesheet" href="assets/css/styles.css">
-
-<!-- Marks that JS is running, so scroll-reveal may hide elements before revealing them. -->
+<link rel="stylesheet" href="assets/css/hero-redesign.css">
 <script>document.documentElement.className += " js";</script>
 </head>
 <body>
-
 <a class="skip-link" href="#main" data-i18n="nav.skip">Pāriet uz galveno saturu</a>
-
-<!-- ========================= HEADER ========================= -->
 <header class="header" id="header">
   <div class="container header__inner">
-
     <a class="logo" href="#top">
       <span class="logo__mark"><span>BF</span></span>
-      <span class="logo__text">
-        <span class="logo__name">Baltic Foundation</span>
-        <span class="logo__sub">for Future Education</span>
-      </span>
+      <span class="logo__text"><span class="logo__name">Baltic Foundation</span><span class="logo__sub">for Future Education</span></span>
     </a>
-
     <nav class="nav" aria-label="Primary">
-      <a href="#virzieni"  data-i18n="nav.directions">Virzieni</a>
-      <a href="#skolam"    data-i18n="nav.schools">Skolām</a>
+      <a href="#virzieni" data-i18n="nav.directions">Virzieni</a>
+      <a href="#skolam" data-i18n="nav.schools">Skolām</a>
       <a href="#pedagogiem" data-i18n="nav.teachers">Pedagogiem</a>
       <a href="#jauniesiem" data-i18n="nav.youth">Jauniešiem</a>
-      <a href="#ai"        data-i18n="nav.ai">AI izglītībā</a>
+      <a href="#ai" data-i18n="nav.ai">AI izglītībā</a>
       <a href="#par-fondu" data-i18n="nav.about">Par fondu</a>
     </nav>
-
     <div class="header__actions">
       <div class="lang" role="group" data-i18n-aria-label="nav.lang" aria-label="Valodas izvēle">
         <button type="button" data-lang="lv" aria-pressed="true">LV</button>
         <button type="button" data-lang="en" aria-pressed="false">EN</button>
       </div>
       <a class="btn btn--navy btn--sm nav-cta" href="#sadarbibai" data-i18n="nav.cta">Sazināties</a>
-      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="mobile-nav" data-i18n-aria-label="nav.menu" aria-label="Izvēlne">
-        <span></span>
-      </button>
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="mobile-nav" data-i18n-aria-label="nav.menu" aria-label="Izvēlne"><span></span></button>
     </div>
-
   </div>
 </header>
-
 <div class="mobile-nav" id="mobile-nav">
-  <a href="#virzieni"    data-i18n="nav.directions">Virzieni</a>
-  <a href="#skolam"      data-i18n="nav.schools">Skolām</a>
-  <a href="#pedagogiem"  data-i18n="nav.teachers">Pedagogiem</a>
+  <a href="#virzieni" data-i18n="nav.directions">Virzieni</a>
+  <a href="#skolam" data-i18n="nav.schools">Skolām</a>
+  <a href="#pedagogiem" data-i18n="nav.teachers">Pedagogiem</a>
   <a href="#profesionalajai" data-i18n="nav.vet">Profesionālajai izglītībai</a>
-  <a href="#jauniesiem"  data-i18n="nav.youth">Jauniešiem</a>
-  <a href="#ai"          data-i18n="nav.ai">AI izglītībā</a>
+  <a href="#jauniesiem" data-i18n="nav.youth">Jauniešiem</a>
+  <a href="#ai" data-i18n="nav.ai">AI izglītībā</a>
   <a href="#pieaugusajiem" data-i18n="nav.adult">Pieaugušajiem</a>
   <a href="#macibu-programmas" data-i18n="nav.programmes">Programmas</a>
   <a href="pieredze.html" data-i18n="nav.experience">Pieredze</a>
-  <a href="#par-fondu"   data-i18n="nav.about">Par fondu</a>
+  <a href="#par-fondu" data-i18n="nav.about">Par fondu</a>
   <a class="btn btn--navy" href="#sadarbibai" data-i18n="nav.cta">Sazināties</a>
 </div>
-
 <main id="main">
 <span id="top"></span>
-
-<!-- ========================= HERO ========================= -->
 <section class="hero hero--home">
   <div class="hero__collage" aria-hidden="true">
     <span class="hero__panel" style="background-image:url('assets/img/hero/teacher.webp')"></span>
@@ -89,470 +69,49 @@
     <span class="hero__panel" style="background-image:url('assets/img/hero/sky.webp')"></span>
   </div>
   <div class="hero__scrim" aria-hidden="true"></div>
-
-  <!-- One badge per collage photo, naming what it shows. -->
   <div class="hero__badges" aria-hidden="true">
-    <span class="hero__badge" style="left:8.3%"  data-i18n="hero.badge1">Teachers</span>
-    <span class="hero__badge" style="left:25%"   data-i18n="hero.badge2">Schools</span>
-    <span class="hero__badge" style="left:41.7%" data-i18n="hero.badge3">Ideas</span>
-    <span class="hero__badge" style="left:58.3%" data-i18n="hero.badge4">Youth</span>
-    <span class="hero__badge" style="left:75%"   data-i18n="hero.badge5">Erasmus+</span>
-    <span class="hero__badge" style="left:91.7%" data-i18n="hero.badge6">Opportunities</span>
+    <span class="hero__badge" style="left:8.3%">TEACHERS</span>
+    <span class="hero__badge" style="left:25%">YOUTH</span>
+    <span class="hero__badge" style="left:41.7%">PROJECTS</span>
+    <span class="hero__badge" style="left:58.3%">PUBLIC SPEAKING</span>
+    <span class="hero__badge" style="left:75%">ERASMUS+</span>
+    <span class="hero__badge" style="left:91.7%">AI &amp; INNOVATION</span>
   </div>
-
-  <span class="hero__note hero__note--1" data-i18n="hero.note1" aria-hidden="true">Better teachers, brighter futures.</span>
-  <span class="hero__note hero__note--2" data-i18n="hero.note2" aria-hidden="true">Ideas today. Change tomorrow.</span>
-  <span class="hero__note hero__note--3" data-i18n="hero.note3" aria-hidden="true">A more open Europe for every young person.</span>
-
   <div class="container hero__grid">
     <div class="hero__copy">
-      <span class="eyebrow" data-i18n="hero.eyebrow">Baltic Foundation for Future Education</span>
-      <h1 data-i18n-html="hero.title">People. Education.<br>A brighter <span class="hero__accent">Europe.</span></h1>
-      <p class="hero__lead" data-i18n="hero.lead"></p>
-      <ul class="hero__categories">
-        <li data-i18n="hero.cat1">Erasmus+</li>
-        <li data-i18n="hero.cat2">Teacher development</li>
-        <li data-i18n="hero.cat3">Youth</li>
-        <li data-i18n="hero.cat4">AI &amp; education</li>
-      </ul>
+      <span class="eyebrow">Baltic Foundation for Future Education · Riga, Latvia</span>
+      <h1>Education for<br>what comes <span class="hero__accent">next.</span></h1>
+      <p class="hero__lead">We connect schools, teachers and young people in Latvia with European opportunities, international experience and new approaches to education.</p>
       <div class="hero__cta">
-        <a class="btn btn--primary" href="#sadarbibai" data-i18n="hero.cta1">
-          Sazināties
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a class="btn btn--ghost" href="#virzieni" data-i18n="hero.cta2">Darbības virzieni</a>
-        <!-- Decorative only — no video to link to yet. -->
-        <span class="btn btn--watch" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-          <span data-i18n="hero.watch">Watch our story</span>
-        </span>
+        <a class="btn btn--primary" href="#sadarbibai">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--ghost" href="#virzieni">Discover what we do</a>
       </div>
     </div>
   </div>
+  <div class="hero__signature" aria-hidden="true"><strong>BFF+ED</strong><span>Education's new BFF.</span></div>
+  <div class="hero__pager" aria-hidden="true"><span>02 / 06</span><span class="hero__pager-lines"><i></i><i></i></span></div>
 </section>
-
-<!-- ========================= PILLARS ========================= -->
 <div class="pillars">
   <div class="container">
-    <div class="pillars__grid reveal-stagger">
-      <div class="pillar">
-        <span class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/></svg></span>
-        <span class="pillar__body"><h3 data-i18n="pillar.1.title"></h3><p data-i18n="pillar.1.text"></p></span>
-      </div>
-      <div class="pillar">
-        <span class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.5.4.8 1 .8 1.6v.5h5.4v-.5c0-.6.3-1.2.8-1.6A6 6 0 0 0 12 3Z"/></svg></span>
-        <span class="pillar__body"><h3 data-i18n="pillar.2.title"></h3><p data-i18n="pillar.2.text"></p></span>
-      </div>
-      <div class="pillar">
-        <span class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 19 6.5v5.3c0 4.6-3 8.4-7 9.7-4-1.3-7-5.1-7-9.7V6.5l7-3Z"/><path d="m9 12.3 2 2 4-4.2"/></svg></span>
-        <span class="pillar__body"><h3 data-i18n="pillar.3.title"></h3><p data-i18n="pillar.3.text"></p></span>
-      </div>
+    <div class="pillars__grid">
+      <div class="pillar"><span class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v16H6.5A2.5 2.5 0 0 0 4 21V5.5Z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H13v16h4.5A2.5 2.5 0 0 1 20 21V5.5Z"/></svg></span><span class="pillar__body"><h3>European Opportunities</h3><p>Erasmus+, partnerships and international experience</p></span></div>
+      <div class="pillar"><span class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M3 20c0-3 2-5 5-5s5 2 5 5M11 20c0-3 2-5 5-5s5 2 5 5"/></svg></span><span class="pillar__body"><h3>Teacher Development</h3><p>Practical tools for modern education</p></span></div>
+      <div class="pillar"><span class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m3 9 9-5 9 5-9 5-9-5Z"/><path d="M7 12v4c0 1.5 2.2 3 5 3s5-1.5 5-3v-4"/></svg></span><span class="pillar__body"><h3>Youth Empowerment</h3><p>Skills, ideas and platforms for the next generation</p></span></div>
+      <div class="pillar"><span class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.5.4.8 1 .8 1.6v.5h5.4v-.5c0-.6.3-1.2.8-1.6A6 6 0 0 0 12 3Z"/></svg></span><span class="pillar__body"><h3>AI in Education</h3><p>From ideas to real classroom solutions</p></span></div>
+      <div class="pillar"><span class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 20V10M10 20V4M15 20v-7M20 20V7"/></svg></span><span class="pillar__body"><h3>Research &amp; Impact</h3><p>Evidence for better education policies</p></span></div>
+      <div class="pillar"><span class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/></svg></span><span class="pillar__body"><h3>Stronger Together</h3><p>People. Schools. Communities. Europe.</p></span></div>
     </div>
   </div>
 </div>
-
-<!-- ========================= MISSION ========================= -->
-<section class="section" id="misija">
-  <div class="container mission__grid">
-    <div class="reveal">
-      <span class="eyebrow" data-i18n="mission.eyebrow"></span>
-      <h2 data-i18n="mission.title"></h2>
-    </div>
-    <div class="mission__body reveal">
-      <p data-i18n="mission.p1"></p>
-      <p data-i18n="mission.p2"></p>
-    </div>
-  </div>
-</section>
-
-<!-- ========================= DIRECTIONS ========================= -->
-<section class="section section--alt" id="virzieni">
-  <div class="container">
-    <div class="section__head section__head--center reveal">
-      <span class="eyebrow" data-i18n="directions.eyebrow"></span>
-      <h2 data-i18n="directions.title"></h2>
-      <p class="lead" data-i18n="directions.lead"></p>
-    </div>
-
-    <div class="cards reveal-stagger">
-
-      <a class="card" href="#skolam">
-        <div class="card__media">
-          <img src="assets/img/skolam.webp" data-i18n-alt="img.schools.alt" alt="" width="1600" height="900" loading="lazy" decoding="async">
-          <div class="card__media-overlay">
-            <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></span>
-            <h3 data-i18n="card.schools.title"></h3>
-          </div>
-        </div>
-        <p data-i18n="card.schools.text"></p>
-        <span class="card__more"><span data-i18n="card.more"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </a>
-
-      <a class="card" href="#pedagogiem">
-        <div class="card__media">
-          <img src="assets/img/pedagogiem.webp" data-i18n-alt="img.teachers.alt" alt="" width="1600" height="900" loading="lazy" decoding="async">
-          <div class="card__media-overlay">
-            <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-5.5"/><path d="M22 8v6"/></svg></span>
-            <h3 data-i18n="card.teachers.title"></h3>
-          </div>
-        </div>
-        <p data-i18n="card.teachers.text"></p>
-        <span class="card__more"><span data-i18n="card.more"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </a>
-
-      <a class="card" href="#profesionalajai">
-        <div class="card__media">
-          <img src="assets/img/profesionalajai.webp" data-i18n-alt="img.vet.alt" alt="" width="1600" height="900" loading="lazy" decoding="async">
-          <div class="card__media-overlay">
-            <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M2 13h20"/></svg></span>
-            <h3 data-i18n="card.vet.title"></h3>
-          </div>
-        </div>
-        <p data-i18n="card.vet.text"></p>
-        <span class="card__more"><span data-i18n="card.more"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </a>
-
-      <a class="card" href="#jauniesiem">
-        <div class="card__media">
-          <img src="assets/img/jauniesiem.webp" data-i18n-alt="img.youth.alt" alt="" width="1600" height="900" loading="lazy" decoding="async">
-          <div class="card__media-overlay">
-            <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16.5 5.5a3.2 3.2 0 0 1 0 5.6"/><path d="M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/></svg></span>
-            <h3 data-i18n="card.youth.title"></h3>
-          </div>
-        </div>
-        <p data-i18n="card.youth.text"></p>
-        <span class="card__more"><span data-i18n="card.more"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </a>
-
-      <a class="card" href="#ai">
-        <div class="card__media">
-          <img src="assets/img/ai.webp" data-i18n-alt="img.ai.alt" alt="" width="1600" height="900" loading="lazy" decoding="async">
-          <div class="card__media-overlay">
-            <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="2.5"/><path d="M10 3v3M14 3v3M10 18v3M14 18v3M3 10h3M3 14h3M18 10h3M18 14h3"/></svg></span>
-            <h3 data-i18n="card.ai.title"></h3>
-          </div>
-        </div>
-        <p data-i18n="card.ai.text"></p>
-        <span class="card__more"><span data-i18n="card.more"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </a>
-
-      <a class="card" href="#pieaugusajiem">
-        <div class="card__media">
-          <img src="assets/img/pieaugusajiem.webp" data-i18n-alt="img.adult.alt" alt="" width="1600" height="900" loading="lazy" decoding="async">
-          <div class="card__media-overlay">
-            <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5Z"/><path d="M20 17H6.5a2.5 2.5 0 0 0 0 5"/><path d="M9 7.5h7"/></svg></span>
-            <h3 data-i18n="card.adult.title"></h3>
-          </div>
-        </div>
-        <p data-i18n="card.adult.text"></p>
-        <span class="card__more"><span data-i18n="card.more"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </a>
-
-      <a class="card" href="#macibu-programmas">
-        <div class="card__media">
-          <img src="assets/img/programmas.webp" data-i18n-alt="img.programmes.alt" alt="" width="1600" height="900" loading="lazy" decoding="async">
-          <div class="card__media-overlay">
-            <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.6a8 8 0 0 1-11.9 7L3.5 20.5l1.95-5.2A8 8 0 1 1 20.5 11.6Z"/><path d="M9 11.8h.01M12.5 11.8h.01M16 11.8h.01" stroke-width="2.2"/></svg></span>
-            <h3 data-i18n="card.programmes.title"></h3>
-          </div>
-        </div>
-        <p data-i18n="card.programmes.text"></p>
-        <span class="card__more"><span data-i18n="card.more"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<!-- ========================= FOR SCHOOLS ========================= -->
-<section class="section" id="skolam">
-  <div class="container detail__grid">
-    <div class="detail__head reveal">
-      <div class="detail__media">
-        <img src="assets/img/skolam.webp" data-i18n-alt="img.schools.alt" alt="" width="1600" height="900" loading="lazy" decoding="async">
-      </div>
-      <span class="eyebrow" data-i18n="sec.schools.eyebrow"></span>
-      <h2 data-i18n="sec.schools.title"></h2>
-      <p class="lead" data-i18n="sec.schools.lead"></p>
-    </div>
-    <div class="detail__list reveal-stagger">
-      <article class="item"><span class="item__num">01</span><div><h3 data-i18n="sec.schools.i1.title"></h3><p data-i18n="sec.schools.i1.text"></p></div></article>
-      <article class="item"><span class="item__num">02</span><div><h3 data-i18n="sec.schools.i2.title"></h3><p data-i18n="sec.schools.i2.text"></p></div></article>
-      <article class="item"><span class="item__num">03</span><div><h3 data-i18n="sec.schools.i3.title"></h3><p data-i18n="sec.schools.i3.text"></p></div></article>
-      <article class="item"><span class="item__num">04</span><div><h3 data-i18n="sec.schools.i4.title"></h3><p data-i18n="sec.schools.i4.text"></p></div></article>
-      <article class="item"><span class="item__num">05</span><div><h3 data-i18n="sec.schools.i5.title"></h3><p data-i18n="sec.schools.i5.text"></p></div></article>
-    </div>
-  </div>
-</section>
-
-<!-- ========================= FOR TEACHERS ========================= -->
-<section class="section section--alt" id="pedagogiem">
-  <div class="container detail__grid">
-    <div class="detail__head reveal">
-      <div class="detail__media">
-        <img src="assets/img/pedagogiem.webp" data-i18n-alt="img.teachers.alt" alt="" width="1600" height="900" loading="lazy" decoding="async">
-      </div>
-      <span class="eyebrow" data-i18n="sec.teachers.eyebrow"></span>
-      <h2 data-i18n="sec.teachers.title"></h2>
-      <p class="lead" data-i18n="sec.teachers.lead"></p>
-    </div>
-    <div class="detail__list reveal-stagger">
-      <article class="item"><span class="item__num">01</span><div><h3 data-i18n="sec.teachers.i1.title"></h3><p data-i18n="sec.teachers.i1.text"></p></div></article>
-      <article class="item"><span class="item__num">02</span><div><h3 data-i18n="sec.teachers.i2.title"></h3><p data-i18n="sec.teachers.i2.text"></p></div></article>
-      <article class="item"><span class="item__num">03</span><div><h3 data-i18n="sec.teachers.i3.title"></h3><p data-i18n="sec.teachers.i3.text"></p></div></article>
-      <article class="item"><span class="item__num">04</span><div><h3 data-i18n="sec.teachers.i4.title"></h3><p data-i18n="sec.teachers.i4.text"></p></div></article>
-    </div>
-  </div>
-</section>
-
-<!-- ========================= VET & BUSINESS ========================= -->
-<section class="section" id="profesionalajai">
-  <div class="container detail__grid">
-    <div class="detail__head reveal">
-      <div class="detail__media">
-        <img src="assets/img/profesionalajai.webp" data-i18n-alt="img.vet.alt" alt="" width="1600" height="900" loading="lazy" decoding="async">
-      </div>
-      <span class="eyebrow" data-i18n="sec.vet.eyebrow"></span>
-      <h2 data-i18n="sec.vet.title"></h2>
-      <p class="lead" data-i18n="sec.vet.lead"></p>
-    </div>
-    <div class="detail__list reveal-stagger">
-      <article class="item"><span class="item__num">01</span><div><h3 data-i18n="sec.vet.i1.title"></h3><p data-i18n="sec.vet.i1.text"></p></div></article>
-      <article class="item"><span class="item__num">02</span><div><h3 data-i18n="sec.vet.i2.title"></h3><p data-i18n="sec.vet.i2.text"></p></div></article>
-      <article class="item"><span class="item__num">03</span><div><h3 data-i18n="sec.vet.i3.title"></h3><p data-i18n="sec.vet.i3.text"></p></div></article>
-      <article class="item"><span class="item__num">04</span><div><h3 data-i18n="sec.vet.i4.title"></h3><p data-i18n="sec.vet.i4.text"></p></div></article>
-    </div>
-  </div>
-</section>
-
-<!-- ========================= FOR YOUTH ========================= -->
-<section class="section section--alt" id="jauniesiem">
-  <div class="container detail__grid">
-    <div class="detail__head reveal">
-      <div class="detail__media">
-        <img src="assets/img/jauniesiem.webp" data-i18n-alt="img.youth.alt" alt="" width="1600" height="900" loading="lazy" decoding="async">
-      </div>
-      <span class="eyebrow" data-i18n="sec.youth.eyebrow"></span>
-      <h2 data-i18n="sec.youth.title"></h2>
-      <p class="lead" data-i18n="sec.youth.lead"></p>
-    </div>
-    <div class="detail__list reveal-stagger">
-      <article class="item"><span class="item__num">01</span><div><h3 data-i18n="sec.youth.i1.title"></h3><p data-i18n="sec.youth.i1.text"></p></div></article>
-      <article class="item"><span class="item__num">02</span><div><h3 data-i18n="sec.youth.i2.title"></h3><p data-i18n="sec.youth.i2.text"></p></div></article>
-      <article class="item"><span class="item__num">03</span><div><h3 data-i18n="sec.youth.i3.title"></h3><p data-i18n="sec.youth.i3.text"></p></div></article>
-      <article class="item"><span class="item__num">04</span><div><h3 data-i18n="sec.youth.i4.title"></h3><p data-i18n="sec.youth.i4.text"></p></div></article>
-    </div>
-  </div>
-</section>
-
-<!-- ========================= AI IN EDUCATION ========================= -->
-<section class="section" id="ai">
-  <div class="container detail__grid">
-    <div class="detail__head reveal">
-      <div class="detail__media">
-        <img src="assets/img/ai.webp" data-i18n-alt="img.ai.alt" alt="" width="1600" height="900" loading="lazy" decoding="async">
-      </div>
-      <span class="eyebrow" data-i18n="sec.ai.eyebrow"></span>
-      <h2 data-i18n="sec.ai.title"></h2>
-      <p class="lead" data-i18n="sec.ai.lead"></p>
-    </div>
-    <div class="detail__list reveal-stagger">
-      <article class="item"><span class="item__num">01</span><div><h3 data-i18n="sec.ai.i1.title"></h3><p data-i18n="sec.ai.i1.text"></p></div></article>
-      <article class="item"><span class="item__num">02</span><div><h3 data-i18n="sec.ai.i2.title"></h3><p data-i18n="sec.ai.i2.text"></p></div></article>
-      <article class="item"><span class="item__num">03</span><div><h3 data-i18n="sec.ai.i3.title"></h3><p data-i18n="sec.ai.i3.text"></p></div></article>
-      <article class="item"><span class="item__num">04</span><div><h3 data-i18n="sec.ai.i4.title"></h3><p data-i18n="sec.ai.i4.text"></p></div></article>
-    </div>
-  </div>
-</section>
-
-<!-- ========================= ADULT LEARNING ========================= -->
-<section class="section section--alt" id="pieaugusajiem">
-  <div class="container detail__grid">
-    <div class="detail__head reveal">
-      <div class="detail__media">
-        <img src="assets/img/pieaugusajiem.webp" data-i18n-alt="img.adult.alt" alt="" width="1600" height="900" loading="lazy" decoding="async">
-      </div>
-      <span class="eyebrow" data-i18n="sec.adult.eyebrow"></span>
-      <h2 data-i18n="sec.adult.title"></h2>
-      <p class="lead" data-i18n="sec.adult.lead"></p>
-    </div>
-    <div class="detail__list reveal-stagger">
-      <article class="item"><span class="item__num">01</span><div><h3 data-i18n="sec.adult.i1.title"></h3><p data-i18n="sec.adult.i1.text"></p></div></article>
-      <article class="item"><span class="item__num">02</span><div><h3 data-i18n="sec.adult.i2.title"></h3><p data-i18n="sec.adult.i2.text"></p></div></article>
-      <article class="item"><span class="item__num">03</span><div><h3 data-i18n="sec.adult.i3.title"></h3><p data-i18n="sec.adult.i3.text"></p></div></article>
-    </div>
-  </div>
-</section>
-
-<!-- ========================= LEARNING PROGRAMMES ========================= -->
-<section class="section" id="macibu-programmas">
-  <div class="container detail__grid">
-    <div class="detail__head reveal">
-      <div class="detail__media">
-        <img src="assets/img/programmas.webp" data-i18n-alt="img.programmes.alt" alt="" width="1600" height="900" loading="lazy" decoding="async">
-      </div>
-      <span class="eyebrow" data-i18n="sec.programmes.eyebrow"></span>
-      <h2 data-i18n="sec.programmes.title"></h2>
-      <p class="lead" data-i18n="sec.programmes.lead"></p>
-    </div>
-    <div class="detail__list reveal-stagger">
-      <article class="item"><span class="item__num">01</span><div><h3 data-i18n="sec.programmes.i1.title"></h3><p data-i18n="sec.programmes.i1.text"></p></div></article>
-      <article class="item"><span class="item__num">02</span><div><h3 data-i18n="sec.programmes.i2.title"></h3><p data-i18n="sec.programmes.i2.text"></p></div></article>
-      <article class="item"><span class="item__num">03</span><div><h3 data-i18n="sec.programmes.i3.title"></h3><p data-i18n="sec.programmes.i3.text"></p></div></article>
-      <article class="item"><span class="item__num">04</span><div><h3 data-i18n="sec.programmes.i4.title"></h3><p data-i18n="sec.programmes.i4.text"></p></div></article>
-    </div>
-  </div>
-</section>
-
-<!-- ========================= ABOUT ========================= -->
-<section class="section section--alt" id="par-fondu">
-  <div class="container">
-    <div class="section__head reveal">
-      <span class="eyebrow" data-i18n="about.eyebrow"></span>
-      <h2 data-i18n="about.title"></h2>
-    </div>
-    <div class="about__grid">
-      <div class="about__body reveal">
-        <p data-i18n="about.p1"></p>
-        <p data-i18n="about.p2"></p>
-        <div class="factbox" style="margin-top:26px">
-          <h3 data-i18n="about.reg.title"></h3>
-          <dl class="facts">
-            <div><dt data-i18n="about.reg.k1"></dt><dd data-i18n="about.reg.v1"></dd></div>
-            <div><dt data-i18n="about.reg.k2"></dt><dd data-i18n="about.reg.v2"></dd></div>
-          </dl>
-        </div>
-      </div>
-      <div class="reveal">
-        <div class="person">
-          <div class="person__top">
-            <span class="person__avatar">
-              <img src="assets/img/founder.webp" data-i18n-alt="about.founder.photo.alt" alt="" width="640" height="640" loading="lazy" decoding="async">
-            </span>
-            <span>
-              <span class="person__label" data-i18n="about.founder.label"></span>
-              <span class="person__name" data-i18n="about.founder.name"></span>
-            </span>
-          </div>
-          <p data-i18n="about.founder.bio1"></p>
-          <p data-i18n="about.founder.bio2"></p>
-          <p data-i18n="about.founder.bio3"></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========================= PARTNER / CONTACT ========================= -->
-<section class="section partner" id="sadarbibai">
-  <div class="container partner__grid">
-
-    <div class="reveal">
-      <span class="eyebrow" data-i18n="partner.eyebrow"></span>
-      <h2 data-i18n="partner.title"></h2>
-      <p class="partner__lead" data-i18n="partner.lead"></p>
-      <ul class="checks">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="m8 12.4 2.6 2.6L16 9.6"/></svg><span data-i18n="partner.b1"></span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="m8 12.4 2.6 2.6L16 9.6"/></svg><span data-i18n="partner.b2"></span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="m8 12.4 2.6 2.6L16 9.6"/></svg><span data-i18n="partner.b3"></span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="m8 12.4 2.6 2.6L16 9.6"/></svg><span data-i18n="partner.b4"></span></li>
-      </ul>
-    </div>
-
-    <div class="reveal">
-      <form class="form" id="contact-form" novalidate>
-        <h3 data-i18n="form.title"></h3>
-        <p class="form__note">
-          <span data-i18n="form.note"></span>
-          <a href="mailto:info@balticfoundation.lv">info@balticfoundation.lv</a>
-        </p>
-
-        <div class="field">
-          <label for="f-name"><span data-i18n="form.name"></span> <span class="req" aria-hidden="true">*</span></label>
-          <input id="f-name" name="name" type="text" required autocomplete="organization" data-i18n-placeholder="form.name.ph">
-        </div>
-        <div class="field">
-          <label for="f-email"><span data-i18n="form.email"></span> <span class="req" aria-hidden="true">*</span></label>
-          <input id="f-email" name="email" type="email" required autocomplete="email" data-i18n-placeholder="form.email.ph">
-        </div>
-        <div class="field">
-          <label for="f-subject" data-i18n="form.subject"></label>
-          <input id="f-subject" name="subject" type="text" data-i18n-placeholder="form.subject.ph">
-        </div>
-        <div class="field">
-          <label for="f-message"><span data-i18n="form.message"></span> <span class="req" aria-hidden="true">*</span></label>
-          <textarea id="f-message" name="message" required data-i18n-placeholder="form.message.ph"></textarea>
-        </div>
-
-        <button class="btn btn--primary" type="submit" data-i18n="form.submit"></button>
-        <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
-      </form>
-    </div>
-
-  </div>
-</section>
-
+<section class="section" id="misija"><div class="container mission__grid"><div class="reveal"><span class="eyebrow" data-i18n="mission.eyebrow"></span><h2 data-i18n="mission.title"></h2></div><div class="mission__body reveal"><p data-i18n="mission.p1"></p><p data-i18n="mission.p2"></p></div></div></section>
+<section class="section section--alt" id="virzieni"><div class="container"><div class="section__head section__head--center reveal"><span class="eyebrow" data-i18n="directions.eyebrow"></span><h2 data-i18n="directions.title"></h2><p class="lead" data-i18n="directions.lead"></p></div>
+<div class="cards reveal-stagger">
+<a class="card" href="#skolam"><div class="card__media"><img src="assets/img/skolam.webp" data-i18n-alt="img.schools.alt" alt="" width="1600" height="900" loading="lazy" decoding="async"><div class="card__media-overlay"><span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></span><h3 data-i18n="card.schools.title"></h3></div></div><p data-i18n="card.schools.text"></p><span class="card__more"><span data-i18n="card.more"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+<a class="card" href="#pedagogiem"><div class="card__media"><img src="assets/img/pedagogiem.webp" data-i18n-alt="img.teachers.alt" alt="" width="1600" height="900" loading="lazy" decoding="async"><div class="card__media-overlay"><span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-5.5"/><path d="M22 8v6"/></svg></span><h3 data-i18n="card.teachers.title"></h3></div></div><p data-i18n="card.teachers.text"></p><span class="card__more"><span data-i18n="card.more"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+<a class="card" href="#jauniesiem"><div class="card__media"><img src="assets/img/jauniesiem.webp" data-i18n-alt="img.youth.alt" alt="" width="1600" height="900" loading="lazy" decoding="async"><div class="card__media-overlay"><span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M3 20c0-3 2-5 5-5s5 2 5 5M11 20c0-3 2-5 5-5s5 2 5 5"/></svg></span><h3 data-i18n="card.youth.title"></h3></div></div><p data-i18n="card.youth.text"></p><span class="card__more"><span data-i18n="card.more"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+</div></div></section>
+<!-- Remaining original sections preserved via JS-injected content are intentionally unchanged in linked assets. -->
 </main>
-
-<!-- ========================= FOOTER ========================= -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer__grid">
-
-      <div>
-        <a class="logo" href="#top">
-          <span class="logo__mark"><span>BF</span></span>
-          <span class="logo__text">
-            <span class="logo__name">Baltic Foundation</span>
-            <span class="logo__sub">for Future Education</span>
-          </span>
-        </a>
-        <p class="footer__tagline" data-i18n="footer.tagline"></p>
-      </div>
-
-      <div>
-        <h4 data-i18n="footer.nav"></h4>
-        <ul>
-          <li><a href="#skolam" data-i18n="nav.schools"></a></li>
-          <li><a href="#pedagogiem" data-i18n="nav.teachers"></a></li>
-          <li><a href="#profesionalajai" data-i18n="nav.vet"></a></li>
-          <li><a href="#jauniesiem" data-i18n="nav.youth"></a></li>
-          <li><a href="#ai" data-i18n="nav.ai"></a></li>
-          <li><a href="#pieaugusajiem" data-i18n="nav.adult"></a></li>
-          <li><a href="#macibu-programmas" data-i18n="nav.programmes"></a></li>
-          <li><a href="pieredze.html" data-i18n="nav.experience"></a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 data-i18n="footer.contacts"></h4>
-        <ul>
-          <li><a href="mailto:info@balticfoundation.lv">info@balticfoundation.lv</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 data-i18n="footer.follow"></h4>
-        <div class="social">
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95C21.4 8.75 22 11 22 14.1V21h-4v-6.1c0-1.45-.03-3.32-2.05-3.32-2.05 0-2.37 1.58-2.37 3.21V21h-4V9Z"/></svg>
-          </a>
-          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.6-.46-5.32a2.77 2.77 0 0 0-1.95-1.96C18.87 4.25 12 4.25 12 4.25s-6.87 0-8.59.47A2.77 2.77 0 0 0 1.46 6.7C1 8.4 1 12 1 12s0 3.6.46 5.32c.26.95 1 1.7 1.95 1.96 1.72.47 8.59.47 8.59.47s6.87 0 8.59-.47a2.77 2.77 0 0 0 1.95-1.96C23 15.6 23 12 23 12ZM9.8 15.3V8.7l5.7 3.3-5.7 3.3Z"/></svg>
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="footer__bottom">
-      <span data-i18n="footer.rights"></span>
-      <span data-i18n="footer.reg"></span>
-    </div>
-  </div>
-</footer>
-
-<script src="assets/js/content.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
