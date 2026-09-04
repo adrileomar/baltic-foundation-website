@@ -83,6 +83,15 @@ const CONTENT = {
     "card.programmes.text": 'Angļu valoda, kritiskā domāšana un starpdisciplināras programmas skolām un organizācijām.',
     "card.more": 'Uzzināt vairāk',
 
+    /* --- Attēli (assets/img/) ---------------------------------------------- */
+    "img.schools.alt": 'Gaišs, mūsdienīgs skolas gaitenis ar lieliem logiem',
+    "img.teachers.alt": 'Pedagogu profesionālās pilnveides nodarbība, skats no auditorijas puses',
+    "img.vet.alt": 'Galdnieka ēvele un darbarīki uz darbgalda — amatniecības apmācība',
+    "img.youth.alt": 'Debašu zāle ar puslokā izvietotiem soliem — vide starptautiskām jauniešu debatēm',
+    "img.ai.alt": 'Abstrakta zilā tehnoloģiju un datu tīklu vizualizācija',
+    "img.adult.alt": 'Pieaugušais lasa pie galda mūsdienīgā bibliotēkā',
+    "img.programmes.alt": 'Neliela grupa pie galda strādā ar piezīmju burtnīcām grupu nodarbībā',
+
     /* --- Skolām ----------------------------------------------------------- */
     "sec.schools.eyebrow": 'Skolām',
     "sec.schools.title": 'Erasmus+ ceļš, ko neejat vieni',
@@ -387,6 +396,14 @@ const CONTENT = {
     "card.programmes.title": 'Learning Programmes',
     "card.programmes.text": 'English, critical thinking and interdisciplinary programmes for schools and organisations.',
     "card.more": 'Learn more',
+
+    "img.schools.alt": 'Bright, modern school corridor with large windows',
+    "img.teachers.alt": 'A teacher training session, seen from the back of the room',
+    "img.vet.alt": 'A hand plane and woodworking tools on a workbench — vocational training',
+    "img.youth.alt": 'A debate hall with curved rows of desks — the kind of setting used for international youth debates',
+    "img.ai.alt": 'Abstract blue-toned visualisation of technology and data networks',
+    "img.adult.alt": 'An adult reading at a table in a modern library',
+    "img.programmes.alt": 'A small group working together with notebooks around a table',
 
     "sec.schools.eyebrow": 'For Schools',
     "sec.schools.title": 'You do not have to navigate Erasmus+ alone',

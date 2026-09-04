@@ -55,9 +55,33 @@ and in `main.js` (the `EMAIL` constant) — change it in both places.
 - Deep navy `#1B2A4A` with a warm amber accent `#E8A33D`
 - Inter, loaded from Google Fonts, with a system-font fallback stack
 - Responsive and mobile-first; scroll animations respect `prefers-reduced-motion`
-- No stock photography — the hero composition is built from CSS shapes
+- The hero composition is built from CSS shapes, not a photo
 
 Design tokens live in the `:root` block at the top of `assets/css/styles.css`.
+
+## Images
+
+`assets/img/*.webp` — one photo per direction, reused both as the card thumbnail
+(`.card__media`, on the homepage grid) and as the supporting image beside that
+direction's detail-section heading (`.detail__media`). All from Pexels (free
+licence, no attribution required, commercial use allowed), cropped to 16:9,
+resized to 1600px wide and compressed to WebP:
+
+| File | Pexels photo ID |
+|---|---|
+| `skolam.webp` | [6345058](https://www.pexels.com/photo/6345058/) |
+| `pedagogiem.webp` | [18999475](https://www.pexels.com/photo/18999475/) |
+| `profesionalajai.webp` | [7480452](https://www.pexels.com/photo/7480452/) |
+| `jauniesiem.webp` | [14501973](https://www.pexels.com/photo/14501973/) |
+| `ai.webp` | [8108716](https://www.pexels.com/photo/8108716/) |
+| `pieaugusajiem.webp` | [6334270](https://www.pexels.com/photo/6334270/) |
+| `programmas.webp` | [8518812](https://www.pexels.com/photo/8518812/) |
+
+Alt text for every image lives in `content.js` under the `img.*.alt` keys (both
+languages) and is applied via `data-i18n-alt` — the same pattern as
+`data-i18n-placeholder` and `data-i18n-aria-label`. To swap a photo: replace the
+`.webp` file (same crop/size/compression), keep the filename, and update the
+matching `img.*.alt` text if the new photo shows something different.
 
 ## Running locally
 

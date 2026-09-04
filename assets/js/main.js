@@ -38,6 +38,9 @@
     document.querySelectorAll('[data-i18n-aria-label]').forEach(function (el) {
       el.setAttribute('aria-label', t(el.getAttribute('data-i18n-aria-label'), lang));
     });
+    document.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
+      el.alt = t(el.getAttribute('data-i18n-alt'), lang);
+    });
 
     // Document metadata — a page can override the shared meta.title /
     // meta.description via <body data-page="slug">, falling back to the
