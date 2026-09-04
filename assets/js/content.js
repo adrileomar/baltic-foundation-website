@@ -43,8 +43,9 @@ const CONTENT = {
     /* --- Hero ------------------------------------------------------------- */
     "hero.eyebrow": 'Nodibinājums · Rīga, Latvija',
     "hero.title": 'Baltic Foundation<br>for Future Education',
-    "hero.tagline": 'No Eiropas iespējām līdz reālām pārmaiņām izglītībā',
-    "hero.lead": 'Mēs savienojam Latvijas skolas, pedagogus un jauniešus ar Eiropas iespējām, starptautisku pieredzi un jaunām pieejām izglītībā. No Erasmus+ un pedagogu profesionālās pilnveides līdz jauniešu programmām, pētniecībai un AI — mēs pārvēršam idejas praktiskos projektos, ko var izmantot reālā izglītības vidē.',
+    "hero.tagline": 'Stiprinām jauniešus. Atbalstām pedagogus. Veidojam nākotni.',
+    "hero.lead1": 'Mēs palīdzam jauniešiem atklāt un attīstīt savus talantus, iegūt pārliecību par sevi un prasmes, kas nepieciešamas nākotnei. Vienlaikus mēs atbalstām pedagogus, palīdzot viņiem atbildēt uz strauji mainīgās pasaules izaicinājumiem.',
+    "hero.lead2": 'Mēs savienojam Latvijas skolas, pedagogus un jauniešus ar Eiropas iespējām, starptautisku pieredzi un jaunām pieejām izglītībā. No Erasmus+ un pedagogu profesionālās pilnveides līdz jauniešu programmām, pētniecībai un AI — mēs pārvēršam idejas praktiskos projektos, kas reāli maina izglītību.',
     "hero.cta1": 'Uzsākt sadarbību',
     "hero.cta2": 'Darbības virzieni',
 
@@ -353,8 +354,9 @@ const CONTENT = {
 
     "hero.eyebrow": 'Foundation · Riga, Latvia',
     "hero.title": 'Baltic Foundation<br>for Future Education',
-    "hero.tagline": 'From European opportunities to real change in education',
-    "hero.lead": 'We connect schools, teachers and young people in Latvia with European opportunities, international experience and new approaches to education. From Erasmus+ and teacher development to youth programmes, research and AI — we turn ideas into practical projects that can be used in real educational settings.',
+    "hero.tagline": 'Empowering young people. Supporting educators. Shaping what comes next.',
+    "hero.lead1": 'We help young people discover and develop their talents, build confidence and gain the skills they need for the future. At the same time, we support educators in responding to the challenges of a rapidly changing world.',
+    "hero.lead2": 'We connect schools, teachers and young people in Latvia with European opportunities, international experience and new approaches to education. From Erasmus+ and teacher development to youth programmes, research and AI — we turn ideas into practical projects that make a real difference in education.',
     "hero.cta1": 'Start a conversation',
     "hero.cta2": 'What we do',
 
