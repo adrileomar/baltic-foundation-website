@@ -39,10 +39,13 @@
       el.setAttribute('aria-label', t(el.getAttribute('data-i18n-aria-label'), lang));
     });
 
-    // Document metadata
-    document.title = t('meta.title', lang);
+    // Document metadata — a page can override the shared meta.title /
+    // meta.description via <body data-page="slug">, falling back to the
+    // homepage's keys when there is no such override for that language.
+    var page = document.body.getAttribute('data-page');
+    document.title = (page && t(page + '.meta.title', lang)) || t('meta.title', lang);
     var desc = document.querySelector('meta[name="description"]');
-    if (desc) desc.setAttribute('content', t('meta.description', lang));
+    if (desc) desc.setAttribute('content', (page && t(page + '.meta.description', lang)) || t('meta.description', lang));
 
     // Switcher state
     document.querySelectorAll('.lang button').forEach(function (btn) {
@@ -141,34 +144,38 @@
 
   /* -------------------------------------------------------- contact form -- */
 
+  // Only present on pages that carry the partner/contact form (currently
+  // just the homepage) — every other page simply skips this block.
   var form = document.getElementById('contact-form');
   var status = document.getElementById('form-status');
 
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
 
-    var lang    = document.documentElement.lang;
-    var name    = form.name.value.trim();
-    var email   = form.email.value.trim();
-    var subject = form.subject.value.trim();
-    var message = form.message.value.trim();
+      var lang    = document.documentElement.lang;
+      var name    = form.name.value.trim();
+      var email   = form.email.value.trim();
+      var subject = form.subject.value.trim();
+      var message = form.message.value.trim();
 
-    if (!name || !email || !message) {
-      status.textContent = t('form.required', lang);
-      status.setAttribute('data-state', 'error');
-      (!name ? form.name : !email ? form.email : form.message).focus();
-      return;
-    }
+      if (!name || !email || !message) {
+        status.textContent = t('form.required', lang);
+        status.setAttribute('data-state', 'error');
+        (!name ? form.name : !email ? form.email : form.message).focus();
+        return;
+      }
 
-    var body = message + '\n\n—\n' + name + '\n' + email;
-    var href = 'mailto:' + EMAIL +
-      '?subject=' + encodeURIComponent(subject || (name + ' — ' + t('partner.title', lang))) +
-      '&body=' + encodeURIComponent(body);
+      var body = message + '\n\n—\n' + name + '\n' + email;
+      var href = 'mailto:' + EMAIL +
+        '?subject=' + encodeURIComponent(subject || (name + ' — ' + t('partner.title', lang))) +
+        '&body=' + encodeURIComponent(body);
 
-    window.location.href = href;
+      window.location.href = href;
 
-    status.textContent = t('form.ok', lang);
-    status.removeAttribute('data-state');
-  });
+      status.textContent = t('form.ok', lang);
+      status.removeAttribute('data-state');
+    });
+  }
 
 })();
