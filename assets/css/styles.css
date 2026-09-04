@@ -250,24 +250,30 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
   display: flex; align-items: flex-end; justify-content: space-between; gap: 40px;
 }
 .hero__copy { max-width: 660px; }
-.hero .eyebrow { color: var(--amber-soft); margin-bottom: 4px; }
+.hero .eyebrow { color: var(--amber-soft); margin-bottom: 16px; }
 .hero .eyebrow::before { background: var(--amber); }
 .hero h1 { color: #fff; margin-bottom: 12px; }
 .hero__accent { color: var(--amber); }
-.hero__lead { color: rgba(255, 255, 255, .9); font-size: clamp(1rem, 1.4vw, 1.1rem); max-width: 56ch; margin-bottom: 8px; text-shadow: 0 1px 12px rgba(0,0,0,.3); }
+.hero__lead {
+  color: rgba(255, 255, 255, .9); font-size: clamp(1.125rem, 1.35vw, 1.25rem);
+  line-height: 1.5; max-width: 600px; margin-top: 20px; margin-bottom: 30px;
+  text-shadow: 0 1px 12px rgba(0,0,0,.3);
+}
 
 /* --- Hero opening splash: name, then headline, in the same box ------------- */
 /* Two states share one sized box so nothing reflows when they swap. Both are
    absolutely positioned text layers; .hero__title is the page's real <h1>
    (always in the accessibility tree), .hero__intro-name is a decorative
-   aria-hidden splash that plays once and is gone. */
-.hero__intro-stage { position: relative; min-height: clamp(60px, 5vw, 78px); margin-bottom: 6px; }
+   aria-hidden splash that plays once and is gone. Width is capped tighter
+   than the rest of the copy column so "Education for / what comes next."
+   wraps at exactly two lines instead of spilling to a third. */
+.hero__intro-stage { position: relative; max-width: 550px; min-height: clamp(96px, 7.2vw, 132px); margin-bottom: 0; }
 .hero__intro-name {
-  position: absolute; inset: 0 0 auto 0; margin: 0;
-  font-size: clamp(1.6rem, 2.9vw, 2rem); font-weight: 700; letter-spacing: -0.033em;
+  position: absolute; inset: 0 0 auto 0; margin: 0; max-width: 550px;
+  font-size: clamp(2.1rem, 3.6vw, 2.75rem); font-weight: 700; letter-spacing: -0.033em;
   line-height: 1.18; color: #fff; overflow-wrap: break-word;
 }
-.hero__title { position: absolute; inset: 0 0 auto 0; margin: 0; font-size: clamp(1.6rem, 2.9vw, 2rem); }
+.hero__title { position: absolute; inset: 0 0 auto 0; margin: 0; max-width: 550px; font-size: clamp(2.1rem, 3.6vw, 2.75rem); }
 
 .js .hero__intro-name {
   opacity: 0;
@@ -299,22 +305,17 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 }
 
 
-.hero__categories { display: flex; flex-wrap: wrap; gap: 10px 24px; margin: 0 0 10px; padding: 0; list-style: none; }
-.hero__categories li {
-  position: relative; padding-left: 16px;
-  font-size: .8rem; font-weight: 650; letter-spacing: .08em; text-transform: uppercase;
-  color: rgba(255, 255, 255, .82);
-}
-.hero__categories li::before {
-  content: ""; position: absolute; left: 0; top: 50%; margin-top: -3px;
-  width: 6px; height: 6px; border-radius: 50%; background: var(--amber);
-}
-
 .hero__cta { display: flex; flex-wrap: wrap; gap: 14px; }
 
 /* Impact metrics — integrated directly into the hero, no cards/shadows,
-   just numbers with thin dividers, sitting over the navy part of the scrim. */
-.hero__stats { display: flex; align-items: stretch; gap: 0; flex: none; margin: 0; }
+   just numbers with thin dividers, sitting over the navy part of the scrim.
+   Nudged right and down from the copy column, with its own left gutter, so
+   it reads as its own block rather than sitting on the same visual line as
+   the CTA row. */
+.hero__stats {
+  display: flex; align-items: stretch; gap: 0; flex: none; margin: 0;
+  padding-left: 60px; transform: translateY(14px);
+}
 .hero__stats > div {
   padding-inline: 22px; border-left: 1px solid rgba(255, 255, 255, .25);
   display: flex; flex-direction: column; gap: 4px;
@@ -335,7 +336,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
    contain, anchored top) keeps its own 21:9-ish proportions and doesn't
    stretch to match — the extra room below it is the hero's own navy gradient,
    which is exactly where the copy sits now. */
-.hero--home { min-height: calc(100vh - 64px); display: flex; align-items: flex-end; padding-bottom: clamp(48px, 7vh, 96px); }
+.hero--home { min-height: calc(100vh - 64px); display: flex; align-items: flex-end; padding-bottom: clamp(68px, 8.5vh, 116px); }
 
 .hero__collage {
   position: absolute; inset: 0; z-index: 0;
@@ -706,7 +707,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
   .btn--watch { display: none; }
   .hero__copy { max-width: none; }
   .hero__grid { flex-direction: column; align-items: stretch; gap: 26px; }
-  .hero__stats { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 0; }
+  .hero__stats { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 0; padding-left: 0; transform: none; }
   .hero__stats > div { border-left: 0; padding-left: 0; border-top: 1px solid rgba(255,255,255,.25); padding-top: 14px; }
   .hero__stats > div:nth-child(-n+2) { border-top: 0; padding-top: 0; }
   .hero__stats > div:nth-child(even) { padding-left: 22px; border-left: 1px solid rgba(255,255,255,.25); }
