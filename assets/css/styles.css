@@ -323,24 +323,37 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
   backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
 }
 
-/* --- Pillars strip --------------------------------------------------------- */
-.pillars {
-  position: relative; z-index: 2; margin-top: -46px;
+/* --- What we do (editorial strip right after the hero) --------------------- */
+.what-we-do { background: #fff; padding-block: clamp(30px, 4vw, 44px) clamp(48px, 6vw, 72px); }
+.what-grid { display: grid; grid-template-columns: minmax(0, 23%) minmax(0, 1fr); gap: clamp(28px, 4vw, 48px); align-items: start; }
+
+.what-intro .eyebrow { margin-bottom: 14px; }
+.what-intro h2 { font-size: clamp(1.4rem, 2vw, 1.7rem); line-height: 1.22; margin-bottom: 22px; }
+.what-intro__arrow {
+  width: 42px; height: 42px; border-radius: 50%; flex: none;
+  display: grid; place-items: center; background: var(--navy); color: #fff;
+  transition: background-color .2s var(--ease), transform .2s var(--ease);
 }
-.pillars__grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
-  background: var(--line); border: 1px solid var(--line);
-  border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);
+.what-intro__arrow:hover { background: var(--navy-700); transform: translateX(3px); }
+.what-intro__arrow svg { width: 17px; height: 17px; }
+
+.what-cards { display: flex; }
+.what-card {
+  flex: 1 1 0; min-width: 0; text-decoration: none; color: inherit;
+  padding-left: 22px; margin-left: 22px; border-left: 1px solid var(--line);
+  transition: transform .25s var(--ease);
 }
-.pillar { background: #fff; padding: 24px 26px; display: flex; align-items: flex-start; gap: 16px; }
-.pillar__icon {
-  width: 44px; height: 44px; border-radius: 12px; flex: none; display: grid; place-items: center;
-  background: linear-gradient(145deg, #EEF2F8, #E4EAF3); color: var(--navy-700);
+.what-card:first-child { padding-left: 0; margin-left: 0; border-left: 0; }
+.what-card:hover { transform: translateY(-3px); }
+.what-card__media {
+  display: block; aspect-ratio: 16 / 9; border-radius: var(--radius) var(--radius) 0 0;
+  overflow: hidden; margin-bottom: 14px; background: var(--bg-alt);
 }
-.pillar__icon svg { width: 22px; height: 22px; }
-.pillar__body { min-width: 0; }
-.pillar h3 { font-size: 1.02rem; margin-bottom: 6px; }
-.pillar p { font-size: .93rem; color: var(--muted); }
+.what-card__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.what-card__icon { display: grid; place-items: center; width: 30px; height: 30px; margin-bottom: 10px; color: var(--navy-700); }
+.what-card__icon svg { width: 22px; height: 22px; }
+.what-card h3 { font-size: .98rem; margin-bottom: 5px; color: var(--ink); }
+.what-card p { font-size: .85rem; color: var(--muted); line-height: 1.45; }
 
 /* --- Mission --------------------------------------------------------------- */
 .mission__grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(32px, 6vw, 72px); align-items: start; }
@@ -667,7 +680,11 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
   .hero__stats > div { border-left: 0; padding-left: 0; border-top: 1px solid rgba(255,255,255,.25); padding-top: 14px; }
   .hero__stats > div:nth-child(-n+2) { border-top: 0; padding-top: 0; }
   .hero__stats > div:nth-child(even) { padding-left: 22px; border-left: 1px solid rgba(255,255,255,.25); }
-  .mission__grid, .detail__grid, .about__grid, .partner__grid { grid-template-columns: 1fr; }
+  .mission__grid, .detail__grid, .about__grid, .partner__grid, .what-grid { grid-template-columns: 1fr; }
+  .what-cards { flex-wrap: wrap; row-gap: 28px; }
+  .what-card { flex: 1 1 40%; padding-left: 0; margin-left: 0; border-left: 0; }
+  .what-card:nth-child(odd) { padding-right: 14px; }
+  .what-card:nth-child(even) { padding-left: 14px; }
   .detail__head { max-width: 640px; }
   .detail__media { aspect-ratio: 16 / 9; max-height: 240px; }
   .pillars__grid { grid-template-columns: 1fr; }
@@ -690,8 +707,9 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 @media (max-width: 620px) {
   body { font-size: 16px; }
   .cards { grid-template-columns: 1fr; }
-  .pillars { margin-top: -32px; }
   .hero__cta .btn { width: 100%; }
+  .what-cards { flex-direction: column; row-gap: 26px; }
+  .what-card { flex: 1 1 auto; padding-inline: 0 !important; margin-left: 0; border-left: 0; }
   .item { grid-template-columns: 1fr; gap: 12px; }
   .facts div { grid-template-columns: 1fr; gap: 2px; }
   .stats-strip .stats { grid-template-columns: 1fr; }
