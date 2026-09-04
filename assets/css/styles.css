@@ -270,7 +270,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 
 .hero__collage {
   position: absolute; inset: 0; z-index: 0;
-  background-size: cover; background-position: 30% center; background-repeat: no-repeat;
+  background-size: contain; background-position: center top; background-repeat: no-repeat;
 }
 
 /* Transparent at the top so the photo reads clearly, deepening to a near-solid
@@ -615,10 +615,9 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 
 @media (max-width: 900px) {
   html { scroll-padding-top: 72px; }
-  /* Below 900px, bias the crop further left (toward the note/teacher side,
-     roughly where the copy sits) and drop the (currently inert) watch
-     button so the copy has the width it needs. */
-  .hero__collage { background-position: 12% center; }
+  /* Below 900px, drop the (currently inert) watch button so the copy has
+     the width it needs — background-size:contain already keeps the full
+     image visible at any viewport width. */
   .btn--watch { display: none; }
   .hero__copy { max-width: none; }
   .hero--home { min-height: 0; }

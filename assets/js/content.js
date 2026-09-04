@@ -41,15 +41,15 @@ const CONTENT = {
     "nav.lang": 'Valodas izvēle',
 
     /* --- Hero ------------------------------------------------------------- */
-    "hero.eyebrow": 'Baltic Foundation for Future Education',
-    "hero.title": 'Cilvēki. Izglītība.<br>Spilgtāka <span class="hero__accent">Eiropa.</span>',
+    "hero.eyebrow": 'Baltic Foundation for Future Education · Rīga, Latvija',
+    "hero.title": 'Izglītība tam,<br>kas <span class="hero__accent">nāk.</span>',
     "hero.lead": 'Mēs savienojam Latvijas skolas, pedagogus un jauniešus ar Eiropas iespējām, starptautisku pieredzi un jaunām pieejām izglītībā.',
     "hero.cat1": 'Erasmus+',
     "hero.cat2": 'Pedagogu pilnveide',
     "hero.cat3": 'Jaunieši',
     "hero.cat4": 'AI izglītībā',
     "hero.cta1": 'Sazināties',
-    "hero.cta2": 'Darbības virzieni',
+    "hero.cta2": 'Uzzināt, ko darām',
     "hero.watch": 'Skatīties mūsu stāstu',
 
     /* --- Trīs balsti ------------------------------------------------------ */
@@ -355,15 +355,15 @@ const CONTENT = {
     "nav.skip": 'Skip to main content',
     "nav.lang": 'Language selection',
 
-    "hero.eyebrow": 'Baltic Foundation for Future Education',
-    "hero.title": 'People. Education.<br>A brighter <span class="hero__accent">Europe.</span>',
+    "hero.eyebrow": 'Baltic Foundation for Future Education · Riga, Latvia',
+    "hero.title": 'Education for<br>what comes <span class="hero__accent">next.</span>',
     "hero.lead": 'We connect schools, teachers and young people in Latvia with European opportunities, international experience and new approaches to education.',
     "hero.cat1": 'Erasmus+',
     "hero.cat2": 'Teacher development',
     "hero.cat3": 'Youth',
     "hero.cat4": 'AI & education',
     "hero.cta1": 'Get in touch',
-    "hero.cta2": 'What we do',
+    "hero.cta2": 'Discover what we do',
     "hero.watch": 'Watch our story',
 
     "pillar.1.title": 'European experience',
