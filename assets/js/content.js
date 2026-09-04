@@ -43,8 +43,8 @@ const CONTENT = {
     /* --- Hero ------------------------------------------------------------- */
     "hero.eyebrow": 'Nodibinājums · Rīga, Latvija',
     "hero.title": 'Baltic Foundation<br>for Future Education',
-    "hero.tagline": 'Veidojam nākotnes izglītību',
-    "hero.lead": 'Mēs palīdzam Latvijas skolām, pedagogiem un jauniešiem izmantot Eiropas iespējas — no Erasmus+ akreditācijas līdz mākslīgā intelekta ieviešanai mācību stundās. Strādājam ar cilvēkiem, nevis ar veidlapām: katrs projekts sākas ar sarunu par to, kas jūsu komandai patiešām nepieciešams.',
+    "hero.tagline": 'No Eiropas iespējām līdz reālām pārmaiņām izglītībā',
+    "hero.lead": 'Mēs savienojam Latvijas skolas, pedagogus un jauniešus ar Eiropas iespējām, starptautisku pieredzi un jaunām pieejām izglītībā. No Erasmus+ un pedagogu profesionālās pilnveides līdz jauniešu programmām, pētniecībai un AI — mēs pārvēršam idejas praktiskos projektos, ko var izmantot reālā izglītības vidē.',
     "hero.cta1": 'Uzsākt sadarbību',
     "hero.cta2": 'Darbības virzieni',
 
@@ -355,8 +355,8 @@ const CONTENT = {
 
     "hero.eyebrow": 'Foundation · Riga, Latvia',
     "hero.title": 'Baltic Foundation<br>for Future Education',
-    "hero.tagline": 'Shaping the future of education',
-    "hero.lead": 'We help schools, teachers and young people in Latvia make the most of European opportunities — from Erasmus+ accreditation to bringing artificial intelligence into the classroom. We work with people, not with forms: every project starts with a conversation about what your team actually needs.',
+    "hero.tagline": 'From European opportunities to real change in education',
+    "hero.lead": 'We connect schools, teachers and young people in Latvia with European opportunities, international experience and new approaches to education. From Erasmus+ and teacher development to youth programmes, research and AI — we turn ideas into practical projects that can be used in real educational settings.',
     "hero.cta1": 'Start a conversation',
     "hero.cta2": 'What we do',
 
