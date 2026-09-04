@@ -32,6 +32,7 @@ const CONTENT = {
     "nav.youth": 'Jauniešiem',
     "nav.ai": 'AI izglītībā',
     "nav.adult": 'Pieaugušajiem',
+    "nav.programmes": 'Programmas',
     "nav.partner": 'Sadarbībai',
     "nav.cta": 'Sazināties',
     "nav.menu": 'Izvēlne',
@@ -62,7 +63,7 @@ const CONTENT = {
 
     /* --- Virzienu režģis -------------------------------------------------- */
     "directions.eyebrow": 'Darbības virzieni',
-    "directions.title": 'Seši virzieni, viena pieeja',
+    "directions.title": 'Septiņi virzieni, viena pieeja',
     "directions.lead": 'Katrs virziens ir izaudzis no reālas vajadzības, ko esam dzirdējuši no skolu vadītājiem, pedagogiem un partneriem. Izvēlieties to, kas jums aktuāls.',
 
     "card.schools.title": 'Skolām',
@@ -77,6 +78,8 @@ const CONTENT = {
     "card.ai.text": 'Pētniecība, konferences un mācību metodikas darbam ar mākslīgo intelektu.',
     "card.adult.title": 'Pieaugušo izglītība',
     "card.adult.text": 'Mūžizglītības programmas un digitālo prasmju kursi kopienām.',
+    "card.programmes.title": 'Mācību programmas',
+    "card.programmes.text": 'Angļu valoda, kritiskā domāšana un starpdisciplināras programmas skolām un organizācijām.',
     "card.more": 'Uzzināt vairāk',
 
     /* --- Skolām ----------------------------------------------------------- */
@@ -157,6 +160,19 @@ const CONTENT = {
     "sec.adult.i3.title": 'Apmācības organizācijām',
     "sec.adult.i3.text": 'Komandu apmācības biedrībām un izglītības iestādēm par projektu vadību un starptautisko sadarbību.',
 
+    /* --- Mācību programmas ------------------------------------------------ */
+    "sec.programmes.eyebrow": 'Mācību programmas',
+    "sec.programmes.title": 'Programmas, ko vadām paši',
+    "sec.programmes.lead": 'Šīs ir programmas, ko fonds izstrādā un vada pats — skolām, organizācijām un mācību grupām. Nodarbībās vairāk runā nekā klausās: valoda un domāšana tiek lietotas, nevis aprakstītas.',
+    "sec.programmes.i1.title": 'Angļu valoda: sarunvaloda un eksāmenu sagatavošana',
+    "sec.programmes.i1.text": 'Grupu programmas, kurās veidojas drošība runāt un prasme rakstīt strukturēti. Sagatavojam arī starptautiskajiem eksāmeniem, nezaudējot uzsvaru uz dzīvu, saprotamu valodu.',
+    "sec.programmes.i2.title": 'Kritiskā domāšana',
+    "sec.programmes.i2.text": 'Argumentācija, avotu izvērtēšana un mediju pratība. Mācāmies atpazīt manipulāciju un veidot pamatotu viedokli — arī tad, kad tas nesakrīt ar vairākuma viedokli.',
+    "sec.programmes.i3.title": 'Starpdisciplinārās programmas',
+    "sec.programmes.i3.text": 'Angļu valoda kopā ar vēsturi, ekonomiku un sociālajām zinātnēm: skolēni pēta reālas tēmas, strādājot svešvalodā (CLIL pieeja). Valoda kļūst par darba rīku, nevis atsevišķu priekšmetu.',
+    "sec.programmes.i4.title": 'Korporatīvā angļu valoda',
+    "sec.programmes.i4.text": 'Angļu valoda organizācijām un komandām: prezentācijas, sarunas, starptautiskā sarakste un komunikācija projektos. Saturu veidojam no reālām jūsu darba situācijām.',
+
     /* --- Par fondu -------------------------------------------------------- */
     "about.eyebrow": 'Par fondu',
     "about.title": 'Kas mēs esam',
@@ -226,6 +242,7 @@ const CONTENT = {
     "nav.youth": 'Youth',
     "nav.ai": 'AI in Education',
     "nav.adult": 'Adult Learning',
+    "nav.programmes": 'Programmes',
     "nav.partner": 'Partner with us',
     "nav.cta": 'Get in touch',
     "nav.menu": 'Menu',
@@ -252,7 +269,7 @@ const CONTENT = {
     "mission.p2": 'Our work rests on three foundations: research that keeps pace with change in education; practice that comes from daily work with schools; and partnership with organisations across Europe. We believe future skills are not an abstraction — they are a question of everyday practice.',
 
     "directions.eyebrow": 'What we do',
-    "directions.title": 'Six directions, one approach',
+    "directions.title": 'Seven directions, one approach',
     "directions.lead": 'Each direction grew out of a real need we have heard from school leaders, teachers and partners. Choose the one that matters to you.',
 
     "card.schools.title": 'For Schools',
@@ -267,6 +284,8 @@ const CONTENT = {
     "card.ai.text": 'Research, conferences and teaching methodologies for working with AI.',
     "card.adult.title": 'Adult Learning',
     "card.adult.text": 'Lifelong learning programmes and digital skills courses for communities.',
+    "card.programmes.title": 'Learning Programmes',
+    "card.programmes.text": 'English, critical thinking and interdisciplinary programmes for schools and organisations.',
     "card.more": 'Learn more',
 
     "sec.schools.eyebrow": 'For Schools',
@@ -340,6 +359,18 @@ const CONTENT = {
     "sec.adult.i2.text": 'Working with municipalities and libraries, we run courses in regions where access to training is limited.',
     "sec.adult.i3.title": 'Training for organisations',
     "sec.adult.i3.text": 'Team training for NGOs and education institutions on project management and international cooperation.',
+
+    "sec.programmes.eyebrow": 'Learning Programmes',
+    "sec.programmes.title": 'Programmes we run ourselves',
+    "sec.programmes.lead": 'These are programmes the foundation designs and delivers itself — for schools, organisations and groups of learners. The sessions are built on discussion rather than lecture: language and thinking are used, not described.',
+    "sec.programmes.i1.title": 'English: communication and exam preparation',
+    "sec.programmes.i1.text": 'Group programmes that build the confidence to speak and the skill to write with structure. We also prepare for international exams, without losing the emphasis on living, understandable language.',
+    "sec.programmes.i2.title": 'Critical thinking',
+    "sec.programmes.i2.text": 'Argumentation, evaluating sources and media literacy. Participants learn to recognise manipulation and build a position they can stand behind — including when it differs from the majority view.',
+    "sec.programmes.i3.title": 'Interdisciplinary programmes',
+    "sec.programmes.i3.text": 'English combined with history, economics and social sciences: students explore real-world topics while working in a foreign language (the CLIL approach). The language becomes a working tool rather than a separate subject.',
+    "sec.programmes.i4.title": 'Business English',
+    "sec.programmes.i4.text": 'English for organisations and teams: presentations, negotiations, international correspondence and project communication. We build the content from the real working situations your people meet.',
 
     "about.eyebrow": 'About',
     "about.title": 'Who we are',
