@@ -250,18 +250,18 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
   display: flex; align-items: flex-end; justify-content: space-between; gap: 40px;
 }
 .hero__copy { max-width: 660px; }
-.hero .eyebrow { color: var(--amber-soft); margin-bottom: 6px; }
+.hero .eyebrow { color: var(--amber-soft); margin-bottom: 4px; }
 .hero .eyebrow::before { background: var(--amber); }
 .hero h1 { color: #fff; margin-bottom: 12px; }
 .hero__accent { color: var(--amber); }
-.hero__lead { color: rgba(255, 255, 255, .9); font-size: clamp(1rem, 1.4vw, 1.1rem); max-width: 56ch; margin-bottom: 10px; text-shadow: 0 1px 12px rgba(0,0,0,.3); }
+.hero__lead { color: rgba(255, 255, 255, .9); font-size: clamp(1rem, 1.4vw, 1.1rem); max-width: 56ch; margin-bottom: 8px; text-shadow: 0 1px 12px rgba(0,0,0,.3); }
 
 /* --- Hero opening splash: name, then headline, in the same box ------------- */
 /* Two states share one sized box so nothing reflows when they swap. Both are
    absolutely positioned text layers; .hero__title is the page's real <h1>
    (always in the accessibility tree), .hero__intro-name is a decorative
    aria-hidden splash that plays once and is gone. */
-.hero__intro-stage { position: relative; min-height: clamp(58px, 6vw, 92px); margin-bottom: 8px; }
+.hero__intro-stage { position: relative; min-height: clamp(58px, 6vw, 92px); margin-bottom: 6px; }
 .hero__intro-name {
   position: absolute; inset: 0 0 auto 0; margin: 0;
   font-size: clamp(1.5rem, 3.4vw, 2.35rem); font-weight: 700; letter-spacing: -0.033em;
@@ -299,7 +299,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 }
 
 
-.hero__categories { display: flex; flex-wrap: wrap; gap: 10px 24px; margin: 0 0 18px; padding: 0; list-style: none; }
+.hero__categories { display: flex; flex-wrap: wrap; gap: 10px 24px; margin: 0 0 14px; padding: 0; list-style: none; }
 .hero__categories li {
   position: relative; padding-left: 16px;
   font-size: .8rem; font-weight: 650; letter-spacing: .08em; text-transform: uppercase;
@@ -334,7 +334,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
    fills the section exactly with no crop and no empty margin on any screen
    wide enough to clear the min-height floor below. On narrower/shorter
    viewports min-height wins instead, giving the copy room to breathe. */
-.hero--home { aspect-ratio: 21 / 9; min-height: min(70vh, 660px); display: flex; align-items: flex-end; padding-bottom: clamp(18px, 2.4vh, 32px); }
+.hero--home { aspect-ratio: 21 / 9; min-height: min(70vh, 660px); display: flex; align-items: flex-end; padding-bottom: clamp(10px, 1.6vh, 22px); }
 
 .hero__collage {
   position: absolute; inset: 0; z-index: 0;
