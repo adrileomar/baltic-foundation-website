@@ -50,7 +50,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 92px;          /* sticky header offset for anchors */
+  scroll-padding-top: 80px;          /* sticky header offset for anchors */
   -webkit-text-size-adjust: 100%;
 }
 
@@ -144,20 +144,20 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
   transition: border-color .25s var(--ease), box-shadow .25s var(--ease);
 }
 .header.is-stuck { border-bottom-color: var(--line); box-shadow: 0 1px 20px rgba(16, 26, 46, .06); }
-.header__inner { display: flex; align-items: center; gap: 20px; min-height: 76px; }
+.header__inner { display: flex; align-items: center; gap: 20px; min-height: 64px; }
 
 /* Logo */
 .logo { display: flex; align-items: center; gap: 13px; text-decoration: none; margin-right: auto; flex: none; }
 .logo__mark {
-  width: 40px; height: 40px; border-radius: 11px; flex: none;
+  width: 34px; height: 34px; border-radius: 10px; flex: none;
   background: linear-gradient(145deg, var(--navy-700), var(--navy-900));
   display: grid; place-items: center; position: relative; overflow: hidden;
 }
 .logo__mark::after {
-  content: ""; position: absolute; inset: auto -6px -8px auto;
-  width: 22px; height: 22px; border-radius: 50%; background: var(--amber); opacity: .9;
+  content: ""; position: absolute; inset: auto -5px -7px auto;
+  width: 18px; height: 18px; border-radius: 50%; background: var(--amber); opacity: .9;
 }
-.logo__mark span { position: relative; z-index: 1; color: #fff; font-weight: 700; font-size: .95rem; letter-spacing: -0.03em; }
+.logo__mark span { position: relative; z-index: 1; color: #fff; font-weight: 700; font-size: .82rem; letter-spacing: -0.03em; }
 .logo__text { display: flex; flex-direction: column; line-height: 1.15; }
 .logo__name { font-weight: 680; font-size: .97rem; color: var(--ink); letter-spacing: -0.015em; }
 .logo__sub { font-size: .73rem; color: var(--muted); letter-spacing: .04em; }
@@ -165,7 +165,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 /* Desktop nav */
 .nav { display: flex; align-items: center; gap: 13px; }
 .nav a {
-  display: block; padding: 9px 2px; border-radius: 8px;
+  display: block; padding: 7px 2px; border-radius: 8px;
   font-size: 15px; letter-spacing: -0.01em; white-space: nowrap;
   font-weight: 550; color: var(--body); text-decoration: none;
   transition: color .18s var(--ease), background-color .18s var(--ease);
@@ -179,7 +179,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 .lang button {
   border: 0; background: transparent; cursor: pointer; font: inherit;
   font-size: .81rem; font-weight: 650; letter-spacing: .04em; color: var(--muted);
-  padding: 6px 13px; border-radius: 999px; transition: all .2s var(--ease);
+  padding: 5px 12px; border-radius: 999px; transition: all .2s var(--ease);
 }
 .lang button:hover { color: var(--navy); }
 .lang button[aria-pressed="true"] { background: var(--navy); color: #fff; }
@@ -203,7 +203,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 
 /* Mobile panel */
 .mobile-nav {
-  display: none; position: fixed; inset: 76px 0 0; z-index: 99;
+  display: none; position: fixed; inset: 64px 0 0; z-index: 99;
   background: #fff; padding: 24px var(--gutter) 40px; overflow-y: auto;
 }
 .mobile-nav.is-open { display: block; animation: fadeUp .28s var(--ease); }
@@ -235,19 +235,28 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
   -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 40%, #000 30%, transparent 100%);
 }
 .hero__grid { position: relative; z-index: 2; }
-.hero__copy { max-width: 640px; }
+.hero__copy { max-width: 660px; }
 .hero .eyebrow { color: var(--amber-soft); }
 .hero .eyebrow::before { background: var(--amber); }
-.hero h1 { color: #fff; margin-bottom: 18px; }
-.hero__tagline {
-  font-size: clamp(1.02rem, 1.7vw, 1.26rem); font-weight: 650; color: var(--amber);
-  text-transform: uppercase; letter-spacing: .03em; margin: 0 0 22px;
+.hero h1 { color: #fff; margin-bottom: 20px; }
+.hero__accent { color: var(--amber); }
+.hero__lead { color: rgba(255, 255, 255, .9); font-size: clamp(1.05rem, 1.6vw, 1.18rem); max-width: 56ch; margin-bottom: 26px; text-shadow: 0 1px 12px rgba(0,0,0,.3); }
+
+.hero__categories { display: flex; flex-wrap: wrap; gap: 10px 24px; margin: 0 0 34px; padding: 0; list-style: none; }
+.hero__categories li {
+  position: relative; padding-left: 16px;
+  font-size: .8rem; font-weight: 650; letter-spacing: .08em; text-transform: uppercase;
+  color: rgba(255, 255, 255, .82);
 }
-.hero__lead { color: rgba(255, 255, 255, .88); font-size: clamp(1.02rem, 1.5vw, 1.13rem); max-width: 56ch; margin-bottom: 34px; text-shadow: 0 1px 12px rgba(0,0,0,.25); }
+.hero__categories li::before {
+  content: ""; position: absolute; left: 0; top: 50%; margin-top: -3px;
+  width: 6px; height: 6px; border-radius: 50%; background: var(--amber);
+}
+
 .hero__cta { display: flex; flex-wrap: wrap; gap: 14px; }
 
 /* --- Home hero: full-bleed angled photo collage ---------------------------- */
-.hero--home { min-height: min(88vh, 780px); display: flex; align-items: center; }
+.hero--home { min-height: min(88vh, 780px); display: flex; align-items: flex-end; padding-bottom: clamp(56px, 8vh, 92px); }
 
 .hero__collage { position: absolute; inset: 0; z-index: 0; display: flex; }
 .hero__panel {
@@ -258,42 +267,17 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 .hero__panel:first-child { margin-left: 0; clip-path: polygon(0 0, 100% 0, calc(100% - 26px) 100%, 0 100%); }
 .hero__panel:last-child { clip-path: polygon(26px 0, 100% 0, 100% 100%, 0 100%); }
 
+/* Transparent at the top so the photos read clearly, deepening to a near-solid
+   navy by the bottom so the copy sitting there stays legible. */
 .hero__scrim {
   position: absolute; inset: 0; z-index: 1;
-  background:
-    linear-gradient(100deg, rgba(16,26,46,.96) 0%, rgba(16,26,46,.88) 30%, rgba(16,26,46,.56) 54%, rgba(16,26,46,.26) 78%, rgba(16,26,46,.4) 100%),
-    linear-gradient(0deg, rgba(16,26,46,.55), transparent 42%);
+  background: linear-gradient(to bottom,
+    rgba(16,26,46,0) 0%,
+    rgba(16,26,46,.1) 32%,
+    rgba(16,26,46,.5) 58%,
+    rgba(16,26,46,.86) 80%,
+    rgba(16,26,46,.96) 100%);
 }
-
-.hero__note {
-  position: absolute; z-index: 2; max-width: 15ch;
-  font-family: "Caveat", cursive; font-size: clamp(1.25rem, 2.1vw, 1.6rem); color: #fff;
-  line-height: 1.2; text-shadow: 0 2px 10px rgba(0,0,0,.35); pointer-events: none;
-}
-.hero__note--1 { right: 7%; top: 15%; transform: rotate(-3deg); }
-.hero__note--2 { right: 4%; bottom: 24%; text-align: right; transform: rotate(2deg); }
-
-.hero__watch {
-  position: absolute; z-index: 2; right: 10%; top: 47%;
-  display: flex; align-items: center; gap: 14px; color: #fff;
-}
-.hero__watch-btn {
-  width: 54px; height: 54px; border-radius: 50%; flex: none;
-  border: 1.5px solid rgba(255,255,255,.7); display: grid; place-items: center;
-}
-.hero__watch-btn svg { width: 17px; height: 17px; margin-left: 3px; }
-.hero__watch-label { font-size: .92rem; font-weight: 600; text-shadow: 0 1px 8px rgba(0,0,0,.3); }
-
-.hero__scroll {
-  position: absolute; z-index: 2; right: 6%; bottom: 7%;
-  display: flex; flex-direction: column; align-items: center; gap: 8px;
-  color: rgba(255,255,255,.78); font-size: .78rem; font-weight: 600; letter-spacing: .04em;
-  text-decoration: none; transition: color .2s var(--ease);
-}
-.hero__scroll:hover { color: #fff; }
-.hero__scroll svg { width: 16px; height: 16px; animation: bob 1.8s ease-in-out infinite; }
-
-@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(5px); } }
 
 /* --- Pillars strip --------------------------------------------------------- */
 .pillars {
@@ -385,7 +369,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
    the items scroll past. A sticky wrapper nested only around the image would
    be boxed in by .detail__head's own short content height and lose that
    travel range. */
-.detail__head { position: sticky; top: 100px; align-self: start; }
+.detail__head { position: sticky; top: 88px; align-self: start; }
 .detail__media {
   position: relative; margin-bottom: 24px; aspect-ratio: 4 / 3; max-height: 420px;
 }
@@ -614,7 +598,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 
 /* --- Responsive ------------------------------------------------------------ */
-@media (max-width: 1240px) {
+@media (max-width: 1050px) {
   .nav { display: none; }
   .burger { display: grid; }
   .header__actions { margin-left: auto; }
@@ -624,14 +608,13 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 }
 
 @media (max-width: 900px) {
-  html { scroll-padding-top: 84px; }
+  html { scroll-padding-top: 72px; }
   /* Six angled slivers only read as a collage with room to breathe; below
      900px, fall back to one full-bleed photo and drop the floating notes,
      the (currently inert) watch button and the scroll cue so the copy has
      the width it needs. */
   .hero__panel { display: none; }
   .hero__panel:nth-child(2) { display: block; clip-path: none; margin-left: 0; width: 100%; flex: 1 1 100%; }
-  .hero__note, .hero__watch, .hero__scroll { display: none; }
   .hero__copy { max-width: none; }
   .hero--home { min-height: 0; }
   .mission__grid, .detail__grid, .about__grid, .partner__grid { grid-template-columns: 1fr; }
@@ -648,10 +631,10 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 @media (max-width: 760px) {
   .nav-cta { display: none; }          /* duplicated inside the mobile menu */
   .logo__sub { display: none; }
-  .header__inner { gap: 12px; min-height: 68px; }
-  .mobile-nav { inset-block-start: 68px; }
+  .header__inner { gap: 12px; min-height: 56px; }
+  .mobile-nav { inset-block-start: 56px; }
   .lang button { padding: 6px 11px; }
-  html { scroll-padding-top: 76px; }
+  html { scroll-padding-top: 64px; }
 }
 
 @media (max-width: 620px) {
@@ -677,7 +660,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 }
 
 @media print {
-  .header, .mobile-nav, .hero__collage, .hero__scrim, .hero__note, .hero__watch, .hero__scroll, .form, .social { display: none !important; }
+  .header, .mobile-nav, .hero__collage, .hero__scrim, .form, .social { display: none !important; }
   .hero, .partner, .cta-band, .footer { background: #fff !important; color: #000 !important; }
   .hero h1, .hero__lead, .partner h2, .cta-band h2 { color: #000 !important; }
 }
