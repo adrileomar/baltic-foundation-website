@@ -99,16 +99,24 @@
 
   <div class="container hero__grid">
     <div class="hero__copy">
-      <span class="eyebrow" data-i18n="hero.eyebrow">Baltic Foundation for Future Education · Riga, Latvia</span>
-      <h1 data-i18n-html="hero.title">Education for<br>what comes <span class="hero__accent">next.</span></h1>
-      <p class="hero__lead" data-i18n="hero.lead"></p>
-      <ul class="hero__categories">
+      <span class="eyebrow hero__late" data-i18n="hero.eyebrow">Baltic Foundation for Future Education · Riga, Latvia</span>
+
+      <!-- Opening splash ("Baltic Foundation for Future Education") swaps
+           for the real headline below once on load; see .hero__intro-*
+           keyframes. Decorative only — aria-hidden, not a second <h1>. -->
+      <div class="hero__intro-stage">
+        <div class="hero__intro-name" aria-hidden="true">Baltic Foundation<br>for Future Education</div>
+        <h1 class="hero__title" data-i18n-html="hero.title">Education for<br>what comes <span class="hero__accent">next.</span></h1>
+      </div>
+
+      <p class="hero__lead hero__late" data-i18n="hero.lead"></p>
+      <ul class="hero__categories hero__late">
         <li data-i18n="hero.cat1">Erasmus+</li>
         <li data-i18n="hero.cat2">Teacher development</li>
         <li data-i18n="hero.cat3">Youth</li>
         <li data-i18n="hero.cat4">AI &amp; education</li>
       </ul>
-      <div class="hero__cta">
+      <div class="hero__cta hero__late">
         <a class="btn btn--primary" href="#sadarbibai" data-i18n="hero.cta1">
           Sazināties
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>

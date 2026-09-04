@@ -256,6 +256,49 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 .hero__accent { color: var(--amber); }
 .hero__lead { color: rgba(255, 255, 255, .9); font-size: clamp(1.05rem, 1.6vw, 1.18rem); max-width: 56ch; margin-bottom: 26px; text-shadow: 0 1px 12px rgba(0,0,0,.3); }
 
+/* --- Hero opening splash: name, then headline, in the same box ------------- */
+/* Two states share one sized box so nothing reflows when they swap. Both are
+   absolutely positioned text layers; .hero__title is the page's real <h1>
+   (always in the accessibility tree), .hero__intro-name is a decorative
+   aria-hidden splash that plays once and is gone. */
+.hero__intro-stage { position: relative; min-height: clamp(96px, 11.5vw, 178px); margin-bottom: 20px; }
+.hero__intro-name {
+  position: absolute; inset: 0 0 auto 0; margin: 0;
+  font-size: clamp(1.95rem, 5.2vw, 3.65rem); font-weight: 700; letter-spacing: -0.033em;
+  line-height: 1.18; color: #fff; overflow-wrap: break-word;
+}
+.hero__title { position: absolute; inset: 0 0 auto 0; margin: 0; }
+
+.js .hero__intro-name {
+  opacity: 0;
+  animation:
+    heroNameIn .8s cubic-bezier(.22, 1, .36, 1) forwards,
+    heroNameOut .5s cubic-bezier(.22, 1, .36, 1) forwards 2.3s;
+}
+.js .hero__title {
+  opacity: 0;
+  animation: heroTitleIn .8s cubic-bezier(.22, 1, .36, 1) forwards 2.7s;
+}
+.js .hero__late { opacity: 0; animation: heroLateIn .7s cubic-bezier(.22, 1, .36, 1) forwards 2.9s; }
+
+@keyframes heroNameIn {
+  from { opacity: 0; transform: translateY(20px); filter: blur(6px); }
+  to   { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+@keyframes heroNameOut {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(-15px); }
+}
+@keyframes heroTitleIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes heroLateIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
 .hero__categories { display: flex; flex-wrap: wrap; gap: 10px 24px; margin: 0 0 34px; padding: 0; list-style: none; }
 .hero__categories li {
   position: relative; padding-left: 16px;
@@ -725,6 +768,9 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
     transition-duration: .001ms !important;
   }
   .js .reveal, .js .reveal-stagger > * { opacity: 1 !important; transform: none !important; }
+  /* Skip the hero name/headline swap straight to the finished state. */
+  .hero__intro-name { display: none !important; }
+  .js .hero__title, .js .hero__late { opacity: 1 !important; transform: none !important; }
 }
 
 @media print {
