@@ -16,7 +16,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Caveat:wght@600&display=swap">
 <link rel="stylesheet" href="assets/css/styles.css">
 
 <!-- Marks that JS is running, so scroll-reveal may hide elements before revealing them. -->
@@ -90,6 +90,20 @@
   </div>
   <div class="hero__scrim" aria-hidden="true"></div>
 
+  <!-- One badge per collage photo, naming what it shows. -->
+  <div class="hero__badges" aria-hidden="true">
+    <span class="hero__badge" style="left:8.3%"  data-i18n="hero.badge1">Teachers</span>
+    <span class="hero__badge" style="left:25%"   data-i18n="hero.badge2">Schools</span>
+    <span class="hero__badge" style="left:41.7%" data-i18n="hero.badge3">Ideas</span>
+    <span class="hero__badge" style="left:58.3%" data-i18n="hero.badge4">Youth</span>
+    <span class="hero__badge" style="left:75%"   data-i18n="hero.badge5">Erasmus+</span>
+    <span class="hero__badge" style="left:91.7%" data-i18n="hero.badge6">Opportunities</span>
+  </div>
+
+  <span class="hero__note hero__note--1" data-i18n="hero.note1" aria-hidden="true">Better teachers, brighter futures.</span>
+  <span class="hero__note hero__note--2" data-i18n="hero.note2" aria-hidden="true">Ideas today. Change tomorrow.</span>
+  <span class="hero__note hero__note--3" data-i18n="hero.note3" aria-hidden="true">A more open Europe for every young person.</span>
+
   <div class="container hero__grid">
     <div class="hero__copy">
       <span class="eyebrow" data-i18n="hero.eyebrow">Baltic Foundation for Future Education</span>
@@ -102,8 +116,16 @@
         <li data-i18n="hero.cat4">AI &amp; education</li>
       </ul>
       <div class="hero__cta">
-        <a class="btn btn--primary" href="#sadarbibai" data-i18n="hero.cta1">Uzsākt sadarbību</a>
+        <a class="btn btn--primary" href="#sadarbibai" data-i18n="hero.cta1">
+          Sazināties
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
         <a class="btn btn--ghost" href="#virzieni" data-i18n="hero.cta2">Darbības virzieni</a>
+        <!-- Decorative only — no video to link to yet. -->
+        <span class="btn btn--watch" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          <span data-i18n="hero.watch">Watch our story</span>
+        </span>
       </div>
     </div>
   </div>
