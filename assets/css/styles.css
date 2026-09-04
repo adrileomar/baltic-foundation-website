@@ -309,9 +309,8 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
   background: var(--amber); border-radius: 2px;
 }
 .hero__note--1 { left: 3%; top: 15%; transform: rotate(-3deg); }
-.hero__note--2 { left: 43%; top: 26%; transform: rotate(-2deg); }
-.hero__note--3 { right: 3%; top: 12%; text-align: right; transform: rotate(2deg); }
-.hero__note--3::after { margin-left: auto; }
+.hero__note--2 { right: 3%; top: 12%; text-align: right; transform: rotate(2deg); }
+.hero__note--2::after { margin-left: auto; }
 
 /* --- Pillars strip --------------------------------------------------------- */
 .pillars {
