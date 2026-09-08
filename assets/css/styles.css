@@ -594,6 +594,22 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 .stat__value { display: block; font-size: clamp(1.9rem, 3.4vw, 2.5rem); font-weight: 700; color: var(--amber-deep); letter-spacing: -0.02em; line-height: 1; margin-bottom: 8px; }
 .stat__label { display: block; font-size: .85rem; color: var(--navy-700); font-weight: 550; }
 
+/* --- News list (aktualitates.html) ------------------------------------------ */
+.news-item {
+  display: flex; gap: clamp(24px, 4vw, 48px);
+  padding-block: clamp(26px, 3.6vw, 38px);
+  border-top: 1px solid var(--line);
+}
+.news-item:first-child { border-top: 0; padding-top: 0; }
+.news-item__date {
+  flex: none; width: 140px;
+  font-size: .8rem; font-weight: 650; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--amber-deep);
+}
+.news-item__body { flex: 1 1 auto; min-width: 0; }
+.news-item__body h3 { font-size: clamp(1.15rem, 1.8vw, 1.35rem); margin-bottom: 8px; }
+.news-item__body p { color: var(--body); max-width: 68ch; }
+
 .filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: clamp(28px, 4vw, 40px); }
 .pill {
   font: inherit; font-size: .88rem; font-weight: 600; color: var(--body);
@@ -734,6 +750,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
   .facts div { grid-template-columns: 1fr; gap: 2px; }
   .stats-strip .stats { grid-template-columns: 1fr; }
   .stat { padding: 20px; }
+  .news-item { flex-direction: column; gap: 8px; }
   .footer__grid { grid-template-columns: 1fr; }
   .footer__bottom { flex-direction: column; }
 }
