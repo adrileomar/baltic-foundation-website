@@ -215,6 +215,42 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 .mobile-nav a:hover { color: var(--navy-600); }
 .mobile-nav .btn { width: 100%; margin-top: 26px; }
 
+/* --- Homepage news banner ---------------------------------------------------
+   Full-width clickable strip between the header and the hero. Not sticky —
+   a plain block in normal flow. */
+.news-banner {
+  display: block; background: var(--bg-alt); border-bottom: 1px solid var(--line);
+  text-decoration: none; color: inherit;
+  transition: background-color .2s var(--ease);
+}
+.news-banner:hover, .news-banner:focus-visible { background: var(--bg-tint); }
+.news-banner:hover .news-banner__cta, .news-banner:focus-visible .news-banner__cta {
+  color: var(--navy); border-color: var(--navy-600);
+}
+.news-banner:hover .news-banner__cta svg, .news-banner:focus-visible .news-banner__cta svg { transform: translateX(3px); }
+.news-banner__inner {
+  display: flex; align-items: center; justify-content: space-between; gap: 28px;
+  padding-block: clamp(14px, 2.2vw, 20px);
+}
+.news-banner__text { min-width: 0; }
+.news-banner__label {
+  font-size: .74rem; font-weight: 650; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--amber-deep); margin-right: 14px;
+}
+.news-banner__date { font-size: .8rem; color: var(--muted); font-weight: 500; }
+.news-banner__title {
+  font-size: clamp(1.02rem, 1.6vw, 1.2rem); font-weight: 700; color: var(--navy-900);
+  margin: 4px 0 2px; line-height: 1.3;
+}
+.news-banner__desc { font-size: .92rem; color: var(--body); margin: 0; max-width: 62ch; }
+.news-banner__cta {
+  flex: none; display: inline-flex; align-items: center; gap: 8px;
+  font-size: .88rem; font-weight: 650; color: var(--navy-600);
+  border: 1.5px solid var(--line); border-radius: 999px; padding: 10px 20px;
+  transition: color .2s var(--ease), border-color .2s var(--ease);
+}
+.news-banner__cta svg { width: 15px; height: 15px; transition: transform .2s var(--ease); }
+
 /* --- Hero ------------------------------------------------------------------ */
 .hero {
   position: relative; overflow: hidden; color: #fff;
@@ -769,6 +805,8 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
   .news-item { flex-direction: column; gap: 8px; }
   .news-item__content { flex-direction: column; gap: 16px; }
   .news-item__media { width: 100%; max-width: 320px; order: -1; }
+  .news-banner__inner { flex-direction: column; align-items: stretch; gap: 14px; }
+  .news-banner__cta { justify-content: center; width: 100%; }
   .footer__grid { grid-template-columns: 1fr; }
   .footer__bottom { flex-direction: column; }
 }
@@ -786,7 +824,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 }
 
 @media print {
-  .header, .mobile-nav, .hero__collage, .hero__scrim, .form, .social { display: none !important; }
+  .header, .mobile-nav, .news-banner, .hero__collage, .hero__scrim, .form, .social { display: none !important; }
   .hero, .partner, .cta-band, .footer { background: #fff !important; color: #000 !important; }
   .hero h1, .hero__lead, .hero__accent, .partner h2, .cta-band h2 { color: #000 !important; }
 }

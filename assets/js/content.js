@@ -41,6 +41,18 @@ const CONTENT = {
     "nav.skip": 'Pāriet uz galveno saturu',
     "nav.lang": 'Valodas izvēle',
 
+    /* --- Homepage news banner ----------------------------------------------
+       Points at the latest aktualitates.html item. Title/date are pulled
+       from the same aktualitates.item1.* keys as the article itself, so
+       editing that item keeps this banner in sync automatically — only
+       banner.updated / banner.desc / banner.cta are banner-specific. To
+       take the banner down later, delete the <a class="news-banner">...</a>
+       block in index.html (marked with a NEWS BANNER comment). */
+    "banner.label": 'Aktualitātes',
+    "banner.updated": 'Atjaunināts',
+    "banner.desc": 'Lasiet par fonda dalību OECD PISA 2025 pirmo rezultātu atklāšanā.',
+    "banner.cta": 'Atvērt lapu',
+
     /* --- Hero ------------------------------------------------------------- */
     "hero.eyebrow": 'Baltic Foundation for Future Education · Rīga, Latvija',
     "hero.title": 'Izglītība tam,<br>kas <span class="hero__accent">nāk.</span>',
@@ -386,6 +398,11 @@ const CONTENT = {
     "nav.menu": 'Menu',
     "nav.skip": 'Skip to main content',
     "nav.lang": 'Language selection',
+
+    "banner.label": 'News',
+    "banner.updated": 'Updated',
+    "banner.desc": 'Read about the foundation\'s participation in the OECD PISA 2025 first results launch.',
+    "banner.cta": 'Open page',
 
     "hero.eyebrow": 'Baltic Foundation for Future Education · Riga, Latvia',
     "hero.title": 'Education for<br>what comes <span class="hero__accent">next.</span>',
