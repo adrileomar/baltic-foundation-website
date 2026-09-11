@@ -222,6 +222,10 @@ const CONTENT = {
     "about.reg.v1": '40008362853',
     "about.reg.k2": 'Reģistrācijas datums',
     "about.reg.v2": '07.08.2026.',
+    "about.statutes.title": 'Nodibinājuma statūti',
+    "about.statutes.meta": 'PDF · 5 lpp.',
+    "about.statutes.download": 'Lejupielādēt',
+    "about.statutes.download.aria": 'Lejupielādēt nodibinājuma statūtus (PDF)',
 
     /* --- Sadarbībai ------------------------------------------------------- */
     "partner.eyebrow": 'Sadarbībai',
@@ -571,6 +575,10 @@ const CONTENT = {
     "about.reg.v1": '40008362853',
     "about.reg.k2": 'Date of registration',
     "about.reg.v2": '7 August 2026',
+    "about.statutes.title": 'Foundation statutes',
+    "about.statutes.meta": 'PDF · 5 pages',
+    "about.statutes.download": 'Download',
+    "about.statutes.download.aria": 'Download the foundation\'s statutes (PDF)',
 
     "partner.eyebrow": 'Partner with us',
     "partner.title": 'Looking for a partner in Latvia?',
