@@ -79,40 +79,40 @@
 <main id="main">
 <span id="top"></span>
 
-<section class="hero hero--compact">
-  <div class="container">
-    <span class="eyebrow" data-i18n="register.hero.eyebrow">Erasmus+ kurss</span>
-    <h1 data-i18n="register.hero.title">Reģistrācija</h1>
-    <p class="hero__lead hero__lead--compact" data-i18n="register.hero.lead">Aizpildiet formu, un mēs sazināsimies, lai apstiprinātu jūsu dalību.</p>
-  </div>
-</section>
+<section class="section partner">
+  <div class="container partner__grid">
 
-<section class="section">
-  <div class="container" style="max-width:560px;">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="register.hero.eyebrow">Erasmus+ kurss</span>
+      <h1 data-i18n="register.hero.title">Reģistrācija</h1>
+      <p class="partner__lead" data-i18n="register.hero.lead">Aizpildiet formu, un mēs sazināsimies, lai apstiprinātu jūsu dalību.</p>
 
-    <div data-reg-summary></div>
-    <p data-reg-no-course hidden><span data-i18n="register.noCourse">Sesija nav izvēlēta. </span><a href="course-calendar.html" data-i18n="register.noCourse.link">Skatīt kursu kalendāru</a></p>
+      <div data-reg-summary></div>
+      <p data-reg-no-course hidden><span data-i18n="register.noCourse">Sesija nav izvēlēta. </span><a href="course-calendar.html" data-i18n="register.noCourse.link">Skatīt kursu kalendāru</a></p>
+    </div>
 
-    <form class="form" id="register-form" novalidate>
-      <div class="field">
-        <label for="r-name" data-i18n="register.form.name">Vārds, uzvārds</label>
-        <input id="r-name" name="name" type="text" required autocomplete="name" data-i18n-placeholder="register.form.name.ph" placeholder="Anna Bērziņa">
-      </div>
-      <div class="field">
-        <label for="r-email" data-i18n="register.form.email">E-pasts</label>
-        <input id="r-email" name="email" type="email" required autocomplete="email" data-i18n-placeholder="register.form.email.ph" placeholder="anna@skola.lv">
-      </div>
-      <div class="field">
-        <label for="r-org" data-i18n="register.form.org">Skola / organizācija</label>
-        <input id="r-org" name="org" type="text" autocomplete="organization" data-i18n-placeholder="register.form.org.ph" placeholder="Rīgas 1. vidusskola">
-      </div>
-      <div class="field">
-        <label for="r-message" data-i18n="register.form.message">Papildu informācija</label>
-        <textarea id="r-message" name="message" data-i18n-placeholder="register.form.message.ph" placeholder="Jebkas, ko mums vajadzētu zināt — grupas dalībnieku skaits, Erasmus+ projekta numurs u.c."></textarea>
-      </div>
-      <button class="btn btn--primary" type="submit" data-i18n="register.form.submit">Nosūtīt pieteikumu</button>
-      <p id="register-status" class="form__status" role="status" aria-live="polite"></p>
-    </form>
+    <div class="reveal">
+      <form class="form" id="register-form" novalidate>
+        <div class="field">
+          <label for="r-name" data-i18n="register.form.name">Vārds, uzvārds</label>
+          <input id="r-name" name="name" type="text" required autocomplete="name" data-i18n-placeholder="register.form.name.ph" placeholder="Anna Bērziņa">
+        </div>
+        <div class="field">
+          <label for="r-email" data-i18n="register.form.email">E-pasts</label>
+          <input id="r-email" name="email" type="email" required autocomplete="email" data-i18n-placeholder="register.form.email.ph" placeholder="anna@skola.lv">
+        </div>
+        <div class="field">
+          <label for="r-org" data-i18n="register.form.org">Skola / organizācija</label>
+          <input id="r-org" name="org" type="text" autocomplete="organization" data-i18n-placeholder="register.form.org.ph" placeholder="Rīgas 1. vidusskola">
+        </div>
+        <div class="field">
+          <label for="r-message" data-i18n="register.form.message">Papildu informācija</label>
+          <textarea id="r-message" name="message" data-i18n-placeholder="register.form.message.ph" placeholder="Jebkas, ko mums vajadzētu zināt — grupas dalībnieku skaits, Erasmus+ projekta numurs u.c."></textarea>
+        </div>
+        <button class="btn btn--primary" type="submit" data-i18n="register.form.submit">Nosūtīt pieteikumu</button>
+        <p id="register-status" class="form__status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
 
   </div>
 </section>

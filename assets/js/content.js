@@ -464,6 +464,7 @@ const CONTENT = {
     "course.argument.language": 'Angļu valoda',
     "course.argument.badge": 'Pieejama reģistrācija',
     "course.argument.price": '€480 par dalībnieku',
+    "course.argument.cta": 'Reģistrēties',
 
     "course.argument.hook.q1": 'Kas notiktu, ja jūsu skolēni pārstātu gaidīt "pareizo atbildi" — un sāktu domāt paši?',
     "course.argument.hook.q2": 'Kas notiktu, ja visgrūtākā tēma jūsu mācību programmā kļūtu par stundu, ko viņi atceras vislabāk?',
@@ -1007,6 +1008,7 @@ const CONTENT = {
     "course.argument.language": 'English',
     "course.argument.badge": 'Open for enrolment',
     "course.argument.price": '€480 per participant',
+    "course.argument.cta": 'Register now',
 
     "course.argument.hook.q1": 'What if your students stopped waiting for the "right answer" — and started thinking for themselves?',
     "course.argument.hook.q2": 'What if the most difficult topic in your curriculum became the lesson they remembered most?',
