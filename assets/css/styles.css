@@ -871,6 +871,41 @@ a.course-card:hover { box-shadow: var(--shadow); border-color: #D6DDE9; transfor
 .course-meta-row .dot { opacity: .5; }
 .course-price { font-size: 1.3rem; font-weight: 700; color: var(--amber); }
 .course-meta-row + .hero__cta { margin-top: 26px; }
+.course-tagline { font-weight: 650; max-width: 42ch; }
+.course-shortdesc { max-width: 58ch; color: rgba(255,255,255,.76); font-size: 1rem; line-height: 1.6; margin-top: 10px; }
+.course-pricebreak { max-width: 58ch; color: var(--amber-soft); font-size: .92rem; margin-top: 10px; }
+.course-submeta { color: rgba(255,255,255,.66); font-size: .88rem; margin-top: 8px; }
+
+/* --- Differentiator cards ---------------------------------------------------- */
+.diff-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.diff-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 20px; }
+.diff-card h3 { font-size: 1rem; margin-bottom: 8px; }
+.diff-card p { font-size: .9rem; color: var(--muted); }
+
+/* --- Day accordion (6-day programme) ------------------------------------------ */
+.day-list { display: grid; gap: 14px; }
+.day-detail { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 24px; }
+.day-detail[open] { border-color: #D6DDE9; }
+.day-detail summary { display: grid; grid-template-columns: 44px 1fr; gap: 20px; align-items: start; cursor: pointer; list-style: none; }
+.day-detail summary::-webkit-details-marker { display: none; }
+.day-detail summary .item__num { font-size: 1.3rem; font-weight: 700; color: var(--amber-deep); line-height: 1.3; }
+.day-detail summary h3 { font-size: 1.02rem; margin-bottom: 6px; }
+.day-detail__chain { font-size: .88rem; color: var(--navy-700); font-weight: 600; margin-bottom: 4px; }
+.day-detail__outcome { font-size: .88rem; color: var(--muted); margin-bottom: 8px; }
+.day-detail__toggle { display: inline-flex; align-items: center; gap: 6px; font-size: .82rem; font-weight: 650; color: var(--amber-deep); }
+.day-detail__toggle::after { content: "↓"; transition: transform .18s var(--ease); }
+.day-detail[open] .day-detail__toggle::after { transform: rotate(180deg); }
+.day-detail > p { margin: 14px 0 0 64px; font-size: .95rem; color: var(--body); }
+
+/* --- Trainer ------------------------------------------------------------------- */
+.trainer { display: grid; grid-template-columns: 180px 1fr; gap: 32px; align-items: start; max-width: 72ch; margin: 0 auto; }
+.trainer__photo { width: 180px; height: 180px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); flex: none; }
+.trainer__photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.trainer__body h3 { font-size: 1.2rem; margin-bottom: 4px; }
+.trainer__role { font-size: .9rem; color: var(--amber-deep); font-weight: 600; margin-bottom: 14px; }
+.trainer__facts { display: grid; gap: 9px; margin: 0; padding: 0; list-style: none; }
+.trainer__facts li { position: relative; padding-left: 22px; font-size: .94rem; color: var(--body); }
+.trainer__facts li::before { content: ""; position: absolute; left: 0; top: .6em; width: 6px; height: 6px; border-radius: 50%; background: var(--amber); }
 
 /* --- Hook / pitch questions -------------------------------------------------- */
 .course-hook { display: grid; gap: 14px; max-width: 62ch; margin: 0 auto; }
@@ -938,9 +973,14 @@ a.course-card:hover { box-shadow: var(--shadow); border-color: #D6DDE9; transfor
 @media (max-width: 900px) {
   .course-cards { grid-template-columns: 1fr; }
   .course-details-grid { grid-template-columns: 1fr; }
+  .diff-cards { grid-template-columns: repeat(2, 1fr); }
+  .trainer { grid-template-columns: 1fr; text-align: left; max-width: 420px; }
 }
 @media (max-width: 620px) {
   .session-card { flex-direction: column; align-items: flex-start; }
   .session-card__cta { margin-left: 0; width: 100%; }
   .session-card__cta .btn { width: 100%; text-align: center; justify-content: center; }
+  .diff-cards { grid-template-columns: 1fr; }
+  .hero__cta .btn { width: 100%; }
+  .day-detail > p { margin-left: 0; }
 }

@@ -60,7 +60,7 @@
     var sameMonth = start.getMonth() === end.getMonth() && start.getFullYear() === end.getFullYear();
     if (lang === 'lv') {
       if (sameMonth) {
-        return start.getDate() + '.–' + end.getDate() + '. ' + months[start.getMonth()];
+        return start.getDate() + '.–' + end.getDate() + '. ' + months[start.getMonth()] + ' ' + end.getFullYear() + '.';
       }
       var sameYear = start.getFullYear() === end.getFullYear();
       return start.getDate() + '. ' + months[start.getMonth()] + (sameYear ? '' : ' ' + start.getFullYear()) +
@@ -160,12 +160,20 @@
       '</div>';
     }).join('');
 
+    // Find-or-create: avoids appending a duplicate link every time this
+    // re-renders (language toggle, etc). A static fallback link already in
+    // the HTML (for no-JS visitors) is reused rather than duplicated.
+    var link = container.parentNode.querySelector('.view-all-link');
     if (all.length > limit) {
-      var link = document.createElement('a');
-      link.className = 'view-all-link';
+      if (!link) {
+        link = document.createElement('a');
+        link.className = 'view-all-link';
+        container.parentNode.appendChild(link);
+      }
       link.href = 'course-calendar.html?course=' + course.id;
       link.textContent = t.viewAll;
-      container.parentNode.appendChild(link);
+    } else if (link) {
+      link.remove();
     }
   }
 
