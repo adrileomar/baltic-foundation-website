@@ -64,12 +64,21 @@
     </a>
 
     <nav class="nav" aria-label="Primary">
-      <a href="#virzieni"  data-i18n="nav.directions">Virzieni</a>
-      <a href="#skolam"    data-i18n="nav.schools">Skolām</a>
-      <a href="#pedagogiem" data-i18n="nav.teachers">Pedagogiem</a>
-      <a href="#jauniesiem" data-i18n="nav.youth">Jauniešiem</a>
-      <a href="#ai"        data-i18n="nav.ai">AI izglītībā</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nav-dropdown__trigger" aria-expanded="false" aria-haspopup="true">
+          <span data-i18n="nav.directions">Ko mēs darām</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown__menu">
+          <a href="#skolam"     data-i18n="nav.schools">Skolām</a>
+          <a href="#pedagogiem" data-i18n="nav.teachers">Pedagogiem</a>
+          <a href="#jauniesiem" data-i18n="nav.youth">Jauniešiem</a>
+          <a href="#ai"         data-i18n="nav.ai">AI izglītībā</a>
+          <a href="pieredze.html" data-i18n="nav.experience">Mūsu pieredze</a>
+        </div>
+      </div>
       <a href="erasmus-kursi.html" data-i18n="nav.courses">Erasmus+ kursi</a>
+      <a href="aktualitates.html" data-i18n="nav.news">Pētījumi un aktualitātes</a>
       <a href="#par-fondu" data-i18n="nav.about">Par fondu</a>
     </nav>
 
@@ -88,7 +97,7 @@
 </header>
 
 <div class="mobile-nav" id="mobile-nav">
-  <a href="#virzieni"    data-i18n="nav.directions">Virzieni</a>
+  <a href="#virzieni"    data-i18n="nav.directions">Ko mēs darām</a>
   <a href="#skolam"      data-i18n="nav.schools">Skolām</a>
   <a href="#pedagogiem"  data-i18n="nav.teachers">Pedagogiem</a>
   <a href="#profesionalajai" data-i18n="nav.vet">Profesionālajai izglītībai</a>
@@ -97,7 +106,7 @@
   <a href="#pieaugusajiem" data-i18n="nav.adult">Pieaugušajiem</a>
   <a href="#macibu-programmas" data-i18n="nav.programmes">Programmas</a>
   <a href="erasmus-kursi.html" data-i18n="nav.courses">Erasmus+ kursi</a>
-  <a href="pieredze.html" data-i18n="nav.experience">Pieredze</a>
+  <a href="pieredze.html" data-i18n="nav.experience">Mūsu pieredze</a>
   <a href="aktualitates.html" data-i18n="nav.news">Pētījumi un aktualitātes</a>
   <a href="#par-fondu"   data-i18n="nav.about">Par fondu</a>
   <a class="btn btn--navy" href="#sadarbibai" data-i18n="nav.cta">Sazināties</a>
@@ -127,8 +136,8 @@
 
       <p class="hero__lead hero__late" data-i18n="hero.lead">Mēs savienojam Latvijas skolas, pedagogus un jauniešus ar Eiropas iespējām, starptautisku pieredzi un jaunām pieejām izglītībā.</p>
       <div class="hero__cta hero__late">
-        <a class="btn btn--primary" href="#sadarbibai" data-i18n="hero.cta1">
-          Sazināties
+        <a class="btn btn--primary" href="#sadarbibai">
+          <span data-i18n="hero.cta1">Sazināties</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
         <a class="btn btn--ghost" href="#virzieni" data-i18n="hero.cta2">Uzzināt, ko darām</a>
@@ -609,7 +618,7 @@
           <li><a href="#pieaugusajiem" data-i18n="nav.adult">Pieaugušajiem</a></li>
           <li><a href="#macibu-programmas" data-i18n="nav.programmes">Programmas</a></li>
           <li><a href="erasmus-kursi.html" data-i18n="nav.courses">Erasmus+ kursi</a></li>
-          <li><a href="pieredze.html" data-i18n="nav.experience">Pieredze</a></li>
+          <li><a href="pieredze.html" data-i18n="nav.experience">Mūsu pieredze</a></li>
           <li><a href="aktualitates.html" data-i18n="nav.news">Pētījumi un aktualitātes</a></li>
         </ul>
       </div>

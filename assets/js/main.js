@@ -125,6 +125,35 @@
     if (window.innerWidth > 1050) closeMenu();
   });
 
+  /* --------------------------------------------------- "What we do" nav -- */
+  // Desktop-only disclosure menu. CSS already opens it on hover/focus-within;
+  // this only adds click-to-toggle (touch/keyboard) and outside-click / Escape
+  // to close, matching the burger menu's pattern above.
+  document.querySelectorAll('.nav-dropdown').forEach(function (dropdown) {
+    var trigger = dropdown.querySelector('.nav-dropdown__trigger');
+    if (!trigger) return;
+
+    function closeDropdown() {
+      dropdown.classList.remove('is-open');
+      trigger.setAttribute('aria-expanded', 'false');
+    }
+    function toggleDropdown() {
+      var open = dropdown.classList.toggle('is-open');
+      trigger.setAttribute('aria-expanded', String(open));
+    }
+
+    trigger.addEventListener('click', toggleDropdown);
+    document.addEventListener('click', function (e) {
+      if (!dropdown.contains(e.target)) closeDropdown();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && dropdown.classList.contains('is-open')) {
+        closeDropdown();
+        trigger.focus();
+      }
+    });
+  });
+
   /* ------------------------------------------------------ scroll reveal -- */
 
   var revealables = document.querySelectorAll('.reveal, .reveal-stagger');

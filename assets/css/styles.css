@@ -173,6 +173,35 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 }
 .nav a:hover { color: var(--navy); background: var(--bg-alt); }
 
+/* "What we do" dropdown */
+.nav-dropdown { position: relative; }
+.nav-dropdown__trigger {
+  display: flex; align-items: center; gap: 5px; padding: 7px 2px; border-radius: 8px;
+  font: inherit; font-size: 15px; letter-spacing: -0.01em; white-space: nowrap;
+  font-weight: 550; color: var(--body); background: none; border: 0; cursor: pointer;
+  transition: color .18s var(--ease), background-color .18s var(--ease);
+}
+.nav-dropdown__trigger:hover,
+.nav-dropdown.is-open .nav-dropdown__trigger { color: var(--navy); background: var(--bg-alt); }
+.nav-dropdown__trigger svg { width: 13px; height: 13px; transition: transform .18s var(--ease); }
+.nav-dropdown.is-open .nav-dropdown__trigger svg { transform: rotate(180deg); }
+.nav-dropdown__menu {
+  position: absolute; top: calc(100% + 8px); left: 0; min-width: 230px;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg); padding: 8px; display: grid; gap: 2px;
+  opacity: 0; visibility: hidden; transform: translateY(4px);
+  transition: opacity .16s var(--ease), transform .16s var(--ease), visibility .16s;
+  z-index: 40;
+}
+.nav-dropdown__menu a {
+  display: block; padding: 9px 12px; border-radius: 7px; font-size: .92rem;
+  font-weight: 540; color: var(--body); text-decoration: none;
+}
+.nav-dropdown__menu a:hover { color: var(--navy); background: var(--bg-alt); }
+.nav-dropdown:hover .nav-dropdown__menu,
+.nav-dropdown:focus-within .nav-dropdown__menu,
+.nav-dropdown.is-open .nav-dropdown__menu { opacity: 1; visibility: visible; transform: translateY(0); }
+
 .header__actions { display: flex; align-items: center; gap: 12px; flex: none; }
 
 /* Language switch */
