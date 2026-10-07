@@ -581,6 +581,16 @@ const CONTENT = {
     "course.argument.day6.chain": 'Rīga → publiskā telpa → vēsture → izpēte → argumentācija',
     "course.argument.day6.outcome": 'Galvenais rezultāts: pati Rīga kļūst par materiālu uz izpēti balstītai mācīšanai.',
 
+    "course.argument.riga.title": 'Rīga kā klase',
+    "course.argument.riga.text": 'Dalībnieki izpēta, kā publiskā telpa, vēsture, atmiņa un mūsdienu sociālie jautājumi var kļūt par materiālu izpētei un argumentācijai.',
+
+    "course.argument.photo.hero.alt": 'Neliela starptautiska pedagogu grupa diskusijā apmācību telpā',
+    "course.argument.photo.break1.alt": 'Dalībnieki strādā ar pierādījumiem un piezīmēm nelielā grupā',
+    "course.argument.photo.break2.alt": 'Aktīva grupas diskusija kursa laikā',
+    "course.argument.photo.riga1.alt": 'Rīgas vecpilsēta un arhitektūra',
+    "course.argument.photo.riga2.alt": 'Publiskā telpa Rīgas centrā',
+    "course.argument.photo.riga3.alt": 'Kultūras un intelektuālā atmosfēra Rīgā',
+
     "course.argument.trainer.title": 'Iepazīstieties ar kursa vadītāju',
     "course.argument.trainer.name": 'Adriāna Leonora Martinkēviča',
     "course.argument.trainer.role": 'Pedagoģe · Debašu metodikas praktiķe · Doktorande izglītības vadībā',
@@ -1179,6 +1189,16 @@ const CONTENT = {
     "course.argument.day5.outcome": 'Key outcome: participants leave with a complete, classroom-ready lesson.',
     "course.argument.day6.chain": 'Riga → public space → history → inquiry → argumentation',
     "course.argument.day6.outcome": 'Key outcome: Riga itself becomes material for inquiry-based teaching.',
+
+    "course.argument.riga.title": 'Riga as a classroom',
+    "course.argument.riga.text": 'Participants explore how public space, history, memory and contemporary social questions can become prompts for inquiry and argumentation.',
+
+    "course.argument.photo.hero.alt": 'A small international group of educators in discussion during training',
+    "course.argument.photo.break1.alt": 'Participants working with evidence and notes in a small group',
+    "course.argument.photo.break2.alt": 'Active group discussion during the course',
+    "course.argument.photo.riga1.alt": 'Riga Old Town and architecture',
+    "course.argument.photo.riga2.alt": 'Public space in central Riga',
+    "course.argument.photo.riga3.alt": 'A cultural and intellectual atmosphere in Riga',
 
     "course.argument.trainer.title": 'Meet your trainer',
     "course.argument.trainer.name": 'Adriāna Leonora Martinkēviča',
