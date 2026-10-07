@@ -192,7 +192,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
 .nav-dropdown.is-open .nav-dropdown__trigger svg { transform: rotate(180deg); }
 
 .nav-dropdown__menu {
-  position: absolute; top: calc(100% + 10px); left: 0; width: min(400px, 92vw);
+  position: absolute; top: calc(100% + 10px); left: 0; width: min(372px, 92vw);
   background: #fff; border: 1px solid rgba(16, 26, 46, .06); border-radius: 14px;
   box-shadow: 0 10px 24px rgba(16, 26, 46, .09), 0 1px 4px rgba(16, 26, 46, .04);
   padding: 8px; display: grid; gap: 1px;
@@ -209,7 +209,7 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
    so all 5 items land around 320–380px total panel height. */
 .nav-dropdown__item {
   display: flex; align-items: center; justify-content: space-between; gap: 12px;
-  padding: 13px 14px; border-radius: 9px; text-decoration: none;
+  padding: 10px 14px; border-radius: 9px; text-decoration: none;
   transition: background-color .15s var(--ease);
 }
 .nav-dropdown__item:hover { background: var(--bg-alt); }
