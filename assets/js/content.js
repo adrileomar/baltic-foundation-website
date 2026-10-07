@@ -428,6 +428,11 @@ const CONTENT = {
 
     /* --- Erasmus+ Courses — nav + catalog ---------------------------------- */
     "nav.courses": 'Erasmus+ kursi',
+    "nav.dropdown.schools.desc": 'Partnerības, projekti un skolas attīstība',
+    "nav.dropdown.teachers.desc": 'Profesionālā pilnveide un mācību resursi',
+    "nav.dropdown.youth.desc": 'Līdzdalība, debates un starptautiskas iespējas',
+    "nav.dropdown.ai.desc": 'Apmācības, pratība un izglītības inovācijas',
+    "nav.dropdown.experience.desc": 'Projekti, partnerības un iepriekšējais darbs',
     "courses.meta.title": 'Erasmus+ kursi — Baltic Foundation for Future Education',
     "courses.meta.description": 'Erasmus+ pedagogu profesionālās pilnveides kursi Rīgā: debates, angļu valoda, kritiskā domāšana un AI klasē.',
     "courses.hero.eyebrow": 'Erasmus+ kursi',
@@ -1022,6 +1027,11 @@ const CONTENT = {
 
     /* --- Erasmus+ Courses — nav + catalog ---------------------------------- */
     "nav.courses": 'Erasmus+ Courses',
+    "nav.dropdown.schools.desc": 'Partnerships, projects and school development',
+    "nav.dropdown.teachers.desc": 'Professional development and teaching resources',
+    "nav.dropdown.youth.desc": 'Participation, debate and international opportunities',
+    "nav.dropdown.ai.desc": 'Training, literacy and educational innovation',
+    "nav.dropdown.experience.desc": 'Projects, partnerships and previous work',
     "courses.meta.title": 'Erasmus+ Courses — Baltic Foundation for Future Education',
     "courses.meta.description": 'Erasmus+ professional development courses for teachers in Riga: debate, English, critical thinking and AI in the classroom.',
     "courses.hero.eyebrow": 'Erasmus+ Courses',
