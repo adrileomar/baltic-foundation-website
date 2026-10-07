@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reģistrācija — Baltic Foundation for Future Education</title>
+<meta name="description" content="Pieteikšanās Erasmus+ kursam Rīgā.">
+<meta name="theme-color" content="#1B2A4A">
+<meta name="robots" content="noindex">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Baltic Foundation for Future Education">
+<meta property="og:title" content="Reģistrācija — Baltic Foundation for Future Education">
+<meta property="og:description" content="Pieteikšanās Erasmus+ kursam Rīgā.">
+<meta property="og:url" content="https://balticfoundation.lv/register.html">
+<meta property="og:locale" content="lv_LV">
+
+<link rel="canonical" href="https://balticfoundation.lv/register.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231B2A4A'/><circle cx='25' cy='26' r='7' fill='%23E8A33D'/><text x='7' y='21' font-family='Helvetica,Arial' font-size='13' font-weight='bold' fill='white'>BF</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<script>document.documentElement.className += " js";</script>
+</head>
+<body data-page="register">
+
+<a class="skip-link" href="#main" data-i18n="nav.skip">Pāriet uz galveno saturu</a>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html">
+      <span class="logo__mark"><span>BF</span></span>
+      <span class="logo__text">
+        <span class="logo__name">Baltic Foundation</span>
+        <span class="logo__sub">for Future Education</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html#virzieni"  data-i18n="nav.directions">Virzieni</a>
+      <a href="index.html#skolam"    data-i18n="nav.schools">Skolām</a>
+      <a href="index.html#pedagogiem" data-i18n="nav.teachers">Pedagogiem</a>
+      <a href="index.html#jauniesiem" data-i18n="nav.youth">Jauniešiem</a>
+      <a href="index.html#ai"        data-i18n="nav.ai">AI izglītībā</a>
+      <a href="erasmus-kursi.html" data-i18n="nav.courses">Erasmus+ kursi</a>
+      <a href="index.html#par-fondu" data-i18n="nav.about">Par fondu</a>
+    </nav>
+    <div class="header__actions">
+      <div class="lang" role="group" data-i18n-aria-label="nav.lang" aria-label="Valodas izvēle">
+        <button type="button" data-lang="lv" aria-pressed="true">LV</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn--navy btn--sm nav-cta" href="index.html#sadarbibai" data-i18n="nav.cta">Sazināties</a>
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="mobile-nav" data-i18n-aria-label="nav.menu" aria-label="Izvēlne">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html#virzieni"    data-i18n="nav.directions">Virzieni</a>
+  <a href="index.html#skolam"      data-i18n="nav.schools">Skolām</a>
+  <a href="index.html#pedagogiem"  data-i18n="nav.teachers">Pedagogiem</a>
+  <a href="index.html#profesionalajai" data-i18n="nav.vet">Profesionālajai izglītībai</a>
+  <a href="index.html#jauniesiem"  data-i18n="nav.youth">Jauniešiem</a>
+  <a href="index.html#ai"          data-i18n="nav.ai">AI izglītībā</a>
+  <a href="index.html#pieaugusajiem" data-i18n="nav.adult">Pieaugušajiem</a>
+  <a href="index.html#macibu-programmas" data-i18n="nav.programmes">Programmas</a>
+  <a href="erasmus-kursi.html" data-i18n="nav.courses">Erasmus+ kursi</a>
+  <a href="pieredze.html" data-i18n="nav.experience">Pieredze</a>
+  <a href="aktualitates.html" data-i18n="nav.news">Pētījumi un aktualitātes</a>
+  <a href="index.html#par-fondu"   data-i18n="nav.about">Par fondu</a>
+  <a class="btn btn--navy" href="index.html#sadarbibai" data-i18n="nav.cta">Sazināties</a>
+</div>
+
+<main id="main">
+<span id="top"></span>
+
+<section class="hero hero--compact">
+  <div class="container">
+    <span class="eyebrow" data-i18n="register.hero.eyebrow">Erasmus+ kurss</span>
+    <h1 data-i18n="register.hero.title">Reģistrācija</h1>
+    <p class="hero__lead hero__lead--compact" data-i18n="register.hero.lead">Aizpildiet formu, un mēs sazināsimies, lai apstiprinātu jūsu dalību.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:560px;">
+
+    <div data-reg-summary></div>
+    <p data-reg-no-course hidden><span data-i18n="register.noCourse">Sesija nav izvēlēta. </span><a href="course-calendar.html" data-i18n="register.noCourse.link">Skatīt kursu kalendāru</a></p>
+
+    <form class="form" id="register-form" novalidate>
+      <div class="field">
+        <label for="r-name" data-i18n="register.form.name">Vārds, uzvārds</label>
+        <input id="r-name" name="name" type="text" required autocomplete="name" data-i18n-placeholder="register.form.name.ph" placeholder="Anna Bērziņa">
+      </div>
+      <div class="field">
+        <label for="r-email" data-i18n="register.form.email">E-pasts</label>
+        <input id="r-email" name="email" type="email" required autocomplete="email" data-i18n-placeholder="register.form.email.ph" placeholder="anna@skola.lv">
+      </div>
+      <div class="field">
+        <label for="r-org" data-i18n="register.form.org">Skola / organizācija</label>
+        <input id="r-org" name="org" type="text" autocomplete="organization" data-i18n-placeholder="register.form.org.ph" placeholder="Rīgas 1. vidusskola">
+      </div>
+      <div class="field">
+        <label for="r-message" data-i18n="register.form.message">Papildu informācija</label>
+        <textarea id="r-message" name="message" data-i18n-placeholder="register.form.message.ph" placeholder="Jebkas, ko mums vajadzētu zināt — grupas dalībnieku skaits, Erasmus+ projekta numurs u.c."></textarea>
+      </div>
+      <button class="btn btn--primary" type="submit" data-i18n="register.form.submit">Nosūtīt pieteikumu</button>
+      <p id="register-status" class="form__status" role="status" aria-live="polite"></p>
+    </form>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="index.html">
+          <span class="logo__mark"><span>BF</span></span>
+          <span class="logo__text">
+            <span class="logo__name">Baltic Foundation</span>
+            <span class="logo__sub">for Future Education</span>
+          </span>
+        </a>
+        <p class="footer__tagline" data-i18n="footer.tagline">Veidojam nākotnes izglītību — kopā ar skolām, pedagogiem un partneriem Eiropā.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.nav">Virzieni</h4>
+        <ul>
+          <li><a href="index.html#skolam" data-i18n="nav.schools">Skolām</a></li>
+          <li><a href="index.html#pedagogiem" data-i18n="nav.teachers">Pedagogiem</a></li>
+          <li><a href="index.html#profesionalajai" data-i18n="nav.vet">Profesionālajai izglītībai</a></li>
+          <li><a href="index.html#jauniesiem" data-i18n="nav.youth">Jauniešiem</a></li>
+          <li><a href="index.html#ai" data-i18n="nav.ai">AI izglītībā</a></li>
+          <li><a href="index.html#pieaugusajiem" data-i18n="nav.adult">Pieaugušajiem</a></li>
+          <li><a href="index.html#macibu-programmas" data-i18n="nav.programmes">Programmas</a></li>
+          <li><a href="erasmus-kursi.html" data-i18n="nav.courses">Erasmus+ kursi</a></li>
+          <li><a href="pieredze.html" data-i18n="nav.experience">Pieredze</a></li>
+          <li><a href="aktualitates.html" data-i18n="nav.news">Pētījumi un aktualitātes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contacts">Kontakti</h4>
+        <ul><li><a href="mailto:info@balticfoundation.lv">info@balticfoundation.lv</a></li></ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.follow">Sekojiet mums</h4>
+        <div class="social">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95C21.4 8.75 22 11 22 14.1V21h-4v-6.1c0-1.45-.03-3.32-2.05-3.32-2.05 0-2.37 1.58-2.37 3.21V21h-4V9Z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.6-.46-5.32a2.77 2.77 0 0 0-1.95-1.96C18.87 4.25 12 4.25 12 4.25s-6.87 0-8.59.47A2.77 2.77 0 0 0 1.46 6.7C1 8.4 1 12 1 12s0 3.6.46 5.32c.26.95 1 1.7 1.95 1.96 1.72.47 8.59.47 8.59.47s6.87 0 8.59-.47a2.77 2.77 0 0 0 1.95-1.96C23 15.6 23 12 23 12ZM9.8 15.3V8.7l5.7 3.3-5.7 3.3Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span data-i18n="footer.rights">© 2026 Nodibinājums "Baltic Foundation for Future Education". Visas tiesības aizsargātas.</span>
+      <span data-i18n="footer.reg">Reģ. Nr. 40008362853</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/content.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/courses-data.js"></script>
+<script src="assets/js/courses.js"></script>
+<script>
+  (function () {
+    var summaryEl = document.querySelector('[data-reg-summary]');
+    var noCourseEl = document.querySelector('[data-reg-no-course]');
+    var selection = null;
+
+    function draw() {
+      var lang = document.documentElement.lang === 'en' ? 'en' : 'lv';
+      selection = window.BFFECourses.renderRegistrationSummary(summaryEl, lang);
+      if (!selection) { summaryEl.hidden = true; noCourseEl.hidden = false; }
+      else { summaryEl.className = 'reg-summary'; noCourseEl.hidden = true; }
+    }
+    draw();
+    document.querySelectorAll('.lang button').forEach(function (btn) { btn.addEventListener('click', draw); });
+
+    var form = document.getElementById('register-form');
+    var status = document.getElementById('register-status');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var lang = document.documentElement.lang === 'en' ? 'en' : 'lv';
+      var name = form.name.value.trim(), email = form.email.value.trim();
+      var org = form.org.value.trim(), message = form.message.value.trim();
+      if (!name || !email) {
+        status.textContent = (lang === 'lv' ? 'Lūdzu, aizpildiet visus obligātos laukus.' : 'Please fill in all required fields.');
+        status.setAttribute('data-state', 'error');
+        (!name ? form.name : form.email).focus();
+        return;
+      }
+      var courseLabel = selection ? selection.course.title : '';
+      var sessionLabel = selection ? (selection.course.location[lang] + (selection.rangeLabel ? ' · ' + selection.rangeLabel : '')) : '';
+      var subject = 'Erasmus+ reģistrācija: ' + courseLabel + (selection ? ' (' + selection.startIso + ')' : '');
+      var body = 'Kurss: ' + courseLabel + '\n' +
+                 'Sesija: ' + sessionLabel + '\n' +
+                 (selection ? 'Maksa: ' + selection.course.currency + selection.price + '\n' : '') +
+                 '\n' +
+                 'Vārds, uzvārds: ' + name + '\n' +
+                 'E-pasts: ' + email + '\n' +
+                 'Skola / organizācija: ' + org + '\n' +
+                 '\n' + message;
+      window.location.href = 'mailto:info@balticfoundation.lv?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      status.textContent = (lang === 'lv'
+        ? 'Paldies! Jūsu e-pasta klients tagad atvērs sagatavotu pieteikuma vēstuli — pārbaudiet un nosūtiet to.'
+        : 'Thank you! Your email client will now open a prepared registration message — please check it and send.');
+      status.removeAttribute('data-state');
+    });
+  })();
+</script>
+</body>
+</html>

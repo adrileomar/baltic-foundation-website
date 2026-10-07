@@ -846,3 +846,96 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; }
   .hero, .partner, .cta-band, .footer { background: #fff !important; color: #000 !important; }
   .hero h1, .hero__lead, .hero__accent, .partner h2, .cta-band h2 { color: #000 !important; }
 }
+
+/* ============================================================================
+   Erasmus+ course catalog, product pages, calendar and registration
+   ========================================================================== */
+
+/* --- Course catalog cards --------------------------------------------------- */
+.course-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.course-card {
+  display: block; background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 26px 24px; text-decoration: none; color: inherit; transition: box-shadow .18s var(--ease), border-color .18s var(--ease), transform .18s var(--ease);
+}
+a.course-card:hover { box-shadow: var(--shadow); border-color: #D6DDE9; transform: translateY(-2px); }
+.course-card--soon { cursor: default; opacity: .72; }
+.course-card__top { display: flex; margin-bottom: 14px; }
+.course-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.course-card p { font-size: .92rem; color: var(--muted); }
+
+/* --- Course hero meta row --------------------------------------------------- */
+.course-meta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin-top: 18px; font-size: .95rem; color: rgba(255,255,255,.82); }
+.course-meta-row strong { color: #fff; font-weight: 650; }
+.course-meta-row .dot { opacity: .5; }
+.course-price { font-size: 1.3rem; font-weight: 700; color: var(--amber); }
+
+/* --- Hook / pitch questions -------------------------------------------------- */
+.course-hook { display: grid; gap: 14px; max-width: 62ch; margin: 0 auto; }
+.course-hook p { font-size: clamp(1.1rem, 2.2vw, 1.4rem); font-weight: 560; color: var(--ink); letter-spacing: -.01em; line-height: 1.4; }
+
+/* --- Generic course content sections ---------------------------------------- */
+.course-section { max-width: 72ch; margin: 0 auto; }
+.course-section + .course-section { margin-top: clamp(40px, 6vw, 64px); }
+.course-section h2 { font-size: clamp(1.3rem, 2.6vw, 1.7rem); margin-bottom: 16px; }
+.course-section p { font-size: 1rem; color: var(--body); margin-bottom: 14px; }
+.course-section p:last-child { margin-bottom: 0; }
+.course-section ul { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.course-section ul li { position: relative; padding-left: 26px; font-size: .98rem; color: var(--body); }
+.course-section ul li::before { content: ""; position: absolute; left: 0; top: .55em; width: 7px; height: 7px; border-radius: 50%; background: var(--amber); }
+
+/* --- Course details / Erasmus+ funding factboxes ----------------------------- */
+.course-details-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.course-details-grid dt { color: var(--muted); font-size: .86rem; }
+.course-details-grid dd { margin: 2px 0 0; color: var(--ink); font-weight: 600; font-size: .96rem; }
+
+/* --- Upcoming sessions -------------------------------------------------------- */
+.session-list { display: grid; gap: 14px; }
+.session-card {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius-sm);
+  padding: 18px 20px; scroll-margin-top: 100px;
+}
+.session-card.is-highlighted { border-color: var(--amber); box-shadow: 0 0 0 3px rgba(232,163,61,.18); }
+.session-card__date { font-weight: 680; color: var(--ink); font-size: 1.02rem; min-width: 15ch; }
+.session-card__meta { display: flex; flex-wrap: wrap; gap: 6px 14px; color: var(--muted); font-size: .88rem; flex: 1 1 220px; }
+.session-card__cta { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+.session-card--closed { opacity: .6; }
+.view-all-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 18px; font-weight: 650; color: var(--navy-700); text-decoration: none; }
+.view-all-link:hover { text-decoration: underline; }
+
+/* --- Week-picker strip (calendar page) ---------------------------------------- */
+.week-picker { display: grid; gap: 22px; margin-bottom: 36px; }
+.week-picker__month h3 { font-size: .95rem; font-weight: 700; color: var(--navy-700); margin-bottom: 10px; }
+.week-picker__chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.week-chip {
+  font-size: .85rem; font-weight: 600; padding: 8px 14px; border-radius: 999px;
+  border: 1.5px solid var(--line); background: #fff; color: var(--navy-700); text-decoration: none;
+  transition: border-color .15s var(--ease), color .15s var(--ease);
+}
+.week-chip:hover { border-color: var(--amber); color: var(--navy); }
+.week-chip--closed { color: var(--muted); border-style: dashed; text-decoration: line-through; }
+
+/* --- Calendar filter bar -------------------------------------------------------- */
+.calendar-filters { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; }
+.calendar-filters select {
+  font: inherit; font-size: .9rem; padding: 9px 14px; border-radius: 999px; border: 1.5px solid var(--line);
+  background: #fff; color: var(--navy-700); cursor: pointer;
+}
+
+/* --- Registration summary ------------------------------------------------------- */
+.reg-summary { background: var(--navy-900); color: #fff; border-radius: var(--radius); padding: 24px 26px; margin-bottom: 28px; }
+.reg-summary__course { font-size: 1.15rem; font-weight: 680; margin-bottom: 6px; }
+.reg-summary__meta { color: rgba(255,255,255,.78); font-size: .95rem; margin-bottom: 4px; }
+.reg-summary__price { color: var(--amber); font-weight: 700; }
+.reg-summary__change { display: inline-flex; margin-top: 12px; font-size: .88rem; color: rgba(255,255,255,.72); text-decoration: underline; }
+.reg-summary__change:hover { color: #fff; }
+
+@media (max-width: 900px) {
+  .course-cards { grid-template-columns: 1fr; }
+  .course-details-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 620px) {
+  .session-card { flex-direction: column; align-items: flex-start; }
+  .session-card__cta { margin-left: 0; width: 100%; }
+  .session-card__cta .btn { width: 100%; text-align: center; justify-content: center; }
+}
